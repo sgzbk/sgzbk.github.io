@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-2.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-1.jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"sgzbk.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="一个主图公式，看图就明白用法，没什么复杂的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="祼K线主图">
+<meta property="og:url" content="http://sgzbk.top/posts/53411/index.html">
+<meta property="og:site_name" content="水哥指标库">
+<meta property="og:description" content="一个主图公式，看图就明白用法，没什么复杂的。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-1.png">
+<meta property="og:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-2.png">
+<meta property="article:published_time" content="2023-05-23T02:17:58.000Z">
+<meta property="article:modified_time" content="2023-07-28T15:38:59.496Z">
+<meta property="article:author" content="shuige">
+<meta property="article:tag" content="主图">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-1.png">
+
+<link rel="canonical" href="http://sgzbk.top/posts/53411/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>祼K线主图 | 水哥指标库</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">水哥指标库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">发现价值 创造价值</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">13</span></a>
+
+  </li>
+        <li class="menu-item menu-item-首页">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-归档">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-闲聊">
+
+    <a href="/chat/" rel="section"><i class="fa fa-coffee fa-fw"></i>闲聊</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://sgzbk.top/posts/53411/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="shuige">
+      <meta itemprop="description" content="心有所期 忙而不茫">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="水哥指标库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          祼K线主图
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-05-23 10:17:58" itemprop="dateCreated datePublished" datetime="2023-05-23T10:17:58+08:00">2023-05-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-07-28 23:38:59" itemprop="dateModified" datetime="2023-07-28T23:38:59+08:00">2023-07-28</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%85%AC%E5%BC%8F/" itemprop="url" rel="index"><span itemprop="name">公式</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/posts/53411/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/53411/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>  <img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-1.png">  </p>
+<p>  一个主图公式，看图就明白用法，没什么复杂的。</p>
+<span id="more"></span>
+<p>  <mark><strong>源码：</strong></mark>  </p>
+<p>  <font color=e09fde>{一目了然}<br>DRAWGBK(C&gt;0,RGB(20,0,28),RGB(20,0,28),0,0,1);<br>N:&#x3D;240;<br>KK:&#x3D;BARSLAST(CURRBARSCOUNT&#x3D;N);<br>GD:&#x3D;CONST(IF(ISLASTBAR&#x3D;1,HHV(H,KK),0));<br>RR:&#x3D;CONST(IF(ISLASTBAR&#x3D;1,LLV(L,KK),0));<br>KJ:&#x3D;GD-RR;<br>高:IF(CURRBARSCOUNT&lt;&#x3D;N,GD,DRAWNULL),COLOR00FFFF,POINTDOT;<br>压:IF(CURRBARSCOUNT&lt;&#x3D;N,GD-KJ*0.191,DRAWNULL),COLORFF00FF,NODRAW;<br>平衡:IF(CURRBARSCOUNT&lt;&#x3D;N,RR+KJ&#x2F;2,DRAWNULL),COLOR00FFFF,NODRAW;<br>支撑:IF(CURRBARSCOUNT&lt;&#x3D;N,RR+KJ*0.191,DRAWNULL),COLOR00FF00,NODRAW;<br>低:IF(CURRBARSCOUNT&lt;&#x3D;N,RR,DRAWNULL),COLOR00FF00,POINTDOT;<br>天:BARSLAST(L&#x3D;RR),COLOR00FFFF,NODRAW;<br>STICKLINE(CURRBARSCOUNT&#x3D;N,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&#x3D;N,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&#x3D;1,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,平衡,平衡,3,-1),COLORWHITE;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,压,压,3,-1),COLORRED;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,支撑,支撑,3,-1),COLORGREEN;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,压,’0.809’),COLOR0000FF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,平衡,’0.500’),COLORFFFFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,支撑,’0.191’),COLOR00FFFF;<br>DRAWTEXT_FIX(C&gt;O,0.01,0.95,0,’博客：SHUIGESPACE.GITHUB.IO’),COLORYELLOW;<br>A:&#x3D;EMA(C,21)COLORBLUE,LINETHICK3;<br>B:&#x3D;A&lt;REF(A,1);<br>HY:&#x3D;IF(B-1,A,DRAWNULL)COLORRED,LINETHICK3;<br>AA:&#x3D;EMA(C,3) &gt; EMA(C,21);<br>BB:&#x3D;EMA(C,3) &lt; EMA(C,21);<br>CC:&#x3D; EMA(C,3) &gt; EMA(C,8);<br>CC1:&#x3D;EMA(C,3) &lt; EMA(C,8);<br>STICKLINE(AA,L,H,0,0),COLOR0088EE;{金色}<br>STICKLINE(AA,CLOSE,OPEN,3,0),COLOR0055AA;<br>STICKLINE(AA,CLOSE,OPEN,2.8,0),COLOR0066BB;<br>STICKLINE(AA,CLOSE,OPEN,2.5,0),COLOR0077CC;<br>STICKLINE(AA,CLOSE,OPEN,2.2,0),COLOR0088DD;<br>STICKLINE(AA,CLOSE,OPEN,1.7,0),COLOR0099EE;<br>STICKLINE(AA,CLOSE,OPEN,1.2,0),COLOR00AAFF;<br>STICKLINE(AA,CLOSE,OPEN,0.7,0),COLOR00CCFF;<br>STICKLINE(AA,CLOSE,OPEN,0.2,0),COLOR00FFFF;<br>STICKLINE(BB,H,L,0,1),COLORGREEN;{绿色}<br>STICKLINE(BB,C,O,3.2,0),COLOR006600;<br>STICKLINE(BB,C,O,2.6,0),COLOR008800;<br>STICKLINE(BB,C,O,1.9,0),COLOR00AA00;<br>STICKLINE(BB,C,O,1.1,0),COLOR00CC00;<br>STICKLINE(BB,C,O,0.3,0),COLOR00FF00;<br>STICKLINE(BB AND CC,H,L,0,1),COLORFF55FF;{紫色}<br>STICKLINE(BB AND CC,C,O,3.2,0),COLOR880088;<br>STICKLINE(BB AND CC,C,O,2.6,0),COLORAA00AA;<br>STICKLINE(BB AND CC,C,O,1.9,0),COLORCC00CC;<br>STICKLINE(BB AND CC,C,O,1.1,0),COLOREE00EE;<br>STICKLINE(BB AND CC,C,O,0.3,0),COLORFF44FF;<br>STICKLINE(AA AND CC1,H,L,0,1),COLORFF8800;{蓝色}<br>STICKLINE(AA AND CC1,C,O,3.2,0),COLORFF2200;<br>STICKLINE(AA AND CC1,C,O,2.6,0),COLORFF4400;<br>STICKLINE(AA AND CC1,C,O,1.9,0),COLORFF6600;<br>STICKLINE(AA AND CC1,C,O,1.1,0),COLORFF8800;<br>STICKLINE(AA AND CC1,C,O,0.3,0),COLORFFAA00;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,GD-KJ&#x2F;12,’强势区域–急拉减仓!’),COLOR00FFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,GD-KJ&#x2F;3,’●震荡整理–寻机低吸!’),COLOR00FF00;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,RR+KJ&#x2F;3,’◆反弹中轨–逢高休息!’),COLORFFFFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,RR+KJ&#x2F;10,’■弱势区域–暂不参与!’),COLORFFFF00;<br>{}<br>STICKLINE(BARSLAST(CURRBARSCOUNT&#x3D;3)&gt;&#x3D;0,REF(C,BARSLAST(CURRBARSCOUNT&#x3D;3)),REF(C,BARSLAST(CURRBARSCOUNT&#x3D;3)),6,-1),COLORYELLOW;<br>AAA:&#x3D;BARSLAST(DATE!&#x3D;REF(DATE,1));<br>前天收:&#x3D;REF(C,AAA+2)COLORWHITE;<br>{}<br>{高点突破};<br>BDGD:&#x3D;C&#x3D;HHV(C,13);<br>GDSJ:&#x3D;BARSLAST(FILTER(CROSS(0.8,BDGD),2))+1;<br>高点:REF(C,GDSJ),COLORFF00FF,POINTDOT;<br>突破:CROSS(C,REF(高点,1)),COLOR00FFFF,POINTDOT,NODRAW;<br>STICKLINE(GDSJ&lt;&#x3D;6,高点,高点,3,0),COLORFF00FF;<br>DRAWTEXT(突破,LOW,’↑突买’),COLOR00FFFF;<br>DRAWICON(CROSS(C,HHV(突破,’↑突买’)),L,1);</font>  </p>
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-2.png">  </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark>  </p>
+
+    </div>
+
+    
+    
+    <div>
+    
+        <div style="text-align:center;color: #540d15;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+        <div class="reward-container">
+  <div>若是看得爽了，给个赏钱吧!</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="shuige 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="shuige 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>shuige
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://sgzbk.top/posts/53411/" title="祼K线主图">http://sgzbk.top/posts/53411/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注！</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat.png">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">微信</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/woa.png">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">微信公众号</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E4%B8%BB%E5%9B%BE/" rel="tag"><i class="fa fa-tag"></i> 主图</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/13432/" rel="prev" title="超级短线主图">
+      <i class="fa fa-chevron-left"></i> 超级短线主图
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/40233/" rel="next" title="牛来了副图">
+      牛来了副图 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="shuige"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">shuige</p>
+  <div class="site-description" itemprop="description">心有所期 忙而不茫</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+
+
+<script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+<div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div id="myCanvasContainer" class="widget tagcloud">
+        <canvas width="250" height="250" id="resCanvas" style="width=100%">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%BB%E5%9B%BE/" rel="tag">主图</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%B8%BB%E5%9B%BE-%E5%89%AF%E5%9B%BE-%E9%80%89%E8%82%A1/" rel="tag">主图 副图 选股</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%AF%E5%9B%BE/" rel="tag">副图</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%AF%E5%9B%BE-%E9%80%89%E8%82%A1/" rel="tag">副图 选股</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9A%8F%E6%83%B3/" rel="tag">随想</a><span class="tag-list-count">1</span></li></ul>
+        </canvas>
+    </div>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">shuige</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">20k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">18 分钟</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'dM0DqJik6QiiVmx2wNpDnbAy-9Nh9j0Va',
+      appKey     : 'wl00WRrNyVISP1c19vVzFPLs',
+      placeholder: "友善吐槽，文明评论！",
+      avatar     : 'robohash',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
