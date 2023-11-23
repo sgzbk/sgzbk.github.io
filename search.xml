@@ -18,6 +18,25 @@
       </tags>
   </entry>
   <entry>
+    <title>启爆副图和选股</title>
+    <url>/posts/62767/</url>
+    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E5%90%AF%E7%88%86-1.png"> </p>
+<p>分享一个抓板指标，此指标适用于早盘，在9：30前选出，开盘后涨停不一定能买进了。经过测评，胜率还不错，此次测评以10%为条件，即获利或亏损10%都平仓走人，有兴趣自己测评一下。</p>
+<span id="more"></span>
+
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E5%90%AF%E7%88%86%E8%AF%84%E6%B5%8B-1.png">  </p>
+<p><mark><strong>源码:</strong></mark>(副图和选股) </p>
+<p><font color=b14e53>Q1:&#x3D;CLOSE<em>VOL;<br>Q2:&#x3D;EMA((EXPMA(Q1,27)&#x2F;EXPMA(VOL,27)+EXPMA(Q1,54)&#x2F;EXPMA(VOL,54)+EXPMA(Q1,108)&#x2F;EXPMA(VOL,108)+EXPMA(Q1,316)&#x2F;EXPMA(VOL,316))&#x2F;4,34);<br>W1:&#x3D;1.06</em>Q2;<br>W2:&#x3D;Q2*0.94;<br>Q3:&#x3D;REF(C,1)*1.1-C&lt;0.01 AND H&#x3D;C;<br>启爆:CROSS(C,W1) OR CROSS(C,W2) AND Q3;</font> </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
+]]></content>
+      <categories>
+        <category>公式</category>
+      </categories>
+      <tags>
+        <tag>副图 选股</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>买卖参考副图和选股</title>
     <url>/posts/64371/</url>
     <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%B9%B0%E5%8D%96%E5%8F%82%E8%80%83-1.png">  </p>
@@ -35,6 +54,26 @@
       </categories>
       <tags>
         <tag>副图 选股</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>火凤凰主图及选股</title>
+    <url>/posts/14901/</url>
+    <content><![CDATA[<p> <img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%81%AB%E5%87%A4%E5%87%B0-1.png">  </p>
+<p>主图及选股指标公式，信号比较多，结合其它指标使用。  </p>
+<span id="more"></span>  
+<p><mark><strong>主图源码：</strong></mark>  </p>
+<p><font color=b14e53>M1:&#x3D;5;<br>M2:&#x3D;10;<br>M3:&#x3D;22;<br>M4:&#x3D;120;<br>M5:&#x3D;(C-REF(C,1))&#x2F;REF(C,1)*100;<br>STICKLINE(M5&gt;9.8,O,C,3,0),COLORYELLOW;<br>STICKLINE(M5&lt;-9.8,O,C,3,0),COLORGREEN;<br>STICKLINE(LOW &gt;REF(HIGH,1),LOW,REF(HIGH,1),5,1),COLORRED;<br>STICKLINE(C&lt;REF(C,1) AND REF(L,1)&gt;H,REF(L,1),H,5,1),COLORMAGENTA;<br>DRAWTEXT_FIX(C&gt;O,0,0.95,0,’SGZBK.TOP’),COLORWHITE;<br>EMA5:EMA(C,M1),LINETHICK1,COLORBLUE;<br>EMA10:EMA(C,M2),LINETHICK1,COLORYELLOW;<br>EMA22:EMA(C,M3),LINETHICK1,COLORRED;<br>EMA120:EMA(CLOSE,M4),LINETHICK2,COLORGREEN;<br>ZB1:&#x3D;EMA5&gt;&#x3D;EMA10 AND EMA10&gt;&#x3D;EMA22;<br>ZB2:&#x3D;EMA22&gt;&#x3D;EMA10 AND EMA10&gt;&#x3D;EMA5;<br>DRAWICON(CROSS(EMA5,EMA10),L,34);<br>DRAWICON(CROSS(EMA10,EMA5),H,35);<br>DRAWTEXT(ZB1&gt;REF(ZB1,1),L,’↑火凤凰’),COLORRED;<br>DRAWTEXT(ZB2&gt;REF(ZB2,1),H,’↓凤凰尾’),COLORGREEN;</font>  </p>
+<p><mark><strong>选股源码：</strong></mark></p>
+<p><font color=df7251>M1:&#x3D;5;<br>M2:&#x3D;10;<br>M3:&#x3D;22;<br>M4:&#x3D;120;<br>M5:&#x3D;(C-REF(C,1))&#x2F;REF(C,1)*100;<br>EMA5:&#x3D;EMA(C,M1);<br>EMA10:&#x3D;EMA(C,M2);<br>EMA22:&#x3D;EMA(C,M3);<br>ZB1:&#x3D;EMA5&gt;&#x3D;EMA10 AND EMA10&gt;&#x3D;EMA22;<br>ZB2:&#x3D;EMA22&gt;&#x3D;EMA10 AND EMA10&gt;&#x3D;EMA5;<br>XG:ZB1&gt;REF(ZB1,1);</font> </p>
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%81%AB%E5%87%A4%E5%87%B0-2.png"> </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
+]]></content>
+      <categories>
+        <category>公式</category>
+      </categories>
+      <tags>
+        <tag>主图 选股</tag>
       </tags>
   </entry>
   <entry>
@@ -56,25 +95,6 @@
       </tags>
   </entry>
   <entry>
-    <title>启爆副图和选股</title>
-    <url>/posts/62767/</url>
-    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E5%90%AF%E7%88%86-1.png"> </p>
-<p>分享一个抓板指标，此指标适用于早盘，在9：30前选出，开盘后涨停不一定能买进了。经过测评，胜率还不错，此次测评以10%为条件，即获利或亏损10%都平仓走人，有兴趣自己测评一下。</p>
-<span id="more"></span>
-
-<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E5%90%AF%E7%88%86%E8%AF%84%E6%B5%8B-1.png">  </p>
-<p><mark><strong>源码:</strong></mark>(副图和选股) </p>
-<p><font color=b14e53>Q1:&#x3D;CLOSE<em>VOL;<br>Q2:&#x3D;EMA((EXPMA(Q1,27)&#x2F;EXPMA(VOL,27)+EXPMA(Q1,54)&#x2F;EXPMA(VOL,54)+EXPMA(Q1,108)&#x2F;EXPMA(VOL,108)+EXPMA(Q1,316)&#x2F;EXPMA(VOL,316))&#x2F;4,34);<br>W1:&#x3D;1.06</em>Q2;<br>W2:&#x3D;Q2*0.94;<br>Q3:&#x3D;REF(C,1)*1.1-C&lt;0.01 AND H&#x3D;C;<br>启爆:CROSS(C,W1) OR CROSS(C,W2) AND Q3;</font> </p>
-<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
-]]></content>
-      <categories>
-        <category>公式</category>
-      </categories>
-      <tags>
-        <tag>副图 选股</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>大单异动副图</title>
     <url>/posts/19012/</url>
     <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E5%A4%A7%E5%8D%95%E5%BC%82%E5%8A%A8-1.png">  </p>
@@ -92,26 +112,6 @@
       </categories>
       <tags>
         <tag>副图 选股</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的网站开通了</title>
-    <url>/posts/33614/</url>
-    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/68b8661f58f11b28dfc6a0c4884b193a.gif"></p>
-<p><mark style="background-color: #f4a460">开心呀！经历千辛万苦，终于把网站搭建好了。</mark>真不容易，但作为一个爱折腾的人，那种过程很酸爽，痛并快乐着，<font color=#f08080>欢迎大家光临我的网站，你会有意想不到的收获。</font>   </p>
-<span id="more"></span>
-
-<p> <img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E5%A4%AA%E9%9A%BE%E4%BA%86.png">  </p>
-<p>其实，一直以来我都有建立一个自己的网站的想法，在CSDN，博客园，知乎上发表文章，用户交互做的很好，作品也能在百度搜索的到。但缺点也明显，平台各种限制，还有讨厌的广告。我在知乎，CSDN都有账号（没怎么用），还有公众号，如果大家是从这些平台上过来的，会感觉到我已经很少发文了，真的没有兴趣，提不起劲。  </p>
-<p>网站是基于博客系统（hexo）搭建，使用next主题，个人感觉很nice，如果大家有什么好的建议，请指正，我再作修改。真的太难了，为了把网站做好，一直在修改，其中遇到n多的问题，最终还是克服了困难，现在基本是定型，不会做太大的改动，而且在这里花费了太多的时间，就这样吧。  </p>
-<p><font color=f08ae8>生命不息，折腾不止。</font>我在这里主要是分享通达信公式，偶尔会有一些股票方面杂七杂八的东西，这个网站也可以说是个人的一个博客，大家有兴趣可以常来看看，请大家多多支持和鼓励，<mark style="background-color: #f4a460">你们的鼓励，是我最大的动力！</mark>  </p>
-<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%81%AF%E5%92%8C%E8%BD%A6.jpg"></p>
-]]></content>
-      <categories>
-        <category>闲聊</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
       </tags>
   </entry>
   <entry>
@@ -152,21 +152,21 @@
       </tags>
   </entry>
   <entry>
-    <title>操盘买卖主图</title>
-    <url>/posts/12193/</url>
-    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E6%93%8D%E7%9B%98%E4%B9%B0%E5%8D%96-1.png">  </p>
-<p>指标简单明了，根据红色箭头操作，就这样。  </p>
+    <title>祼K线主图</title>
+    <url>/posts/53411/</url>
+    <content><![CDATA[<p>  <img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-1.png">  </p>
+<p>  一个主图公式，看图就明白用法，没什么复杂的。</p>
 <span id="more"></span>
-<p><mark><strong>源码：</strong></mark>  </p>
-<p><font color=e09fde>AA:&#x3D;EMA(C,2);<br>BB:&#x3D;EMA(SLOPE(C,21)*20+C,42);<br>买:&#x3D;CROSS(AA,BB);<br>卖:&#x3D;CROSS(BB,AA);<br>DRAWICON(买,L-0.1,1);<br>DRAWICON(卖,H+0.1,2);<br>STICKLINE(AA&gt;&#x3D;BB,LOW,HIGH,0.0,1),COLORRED;<br>STICKLINE(AA&gt;&#x3D;BB,CLOSE,OPEN,2,1),COLORRED;<br>STICKLINE(AA&lt;BB,LOW,HIGH,0.0,1),COLORGREEN;<br>STICKLINE(AA&lt;BB,CLOSE,OPEN,2,1),COLORGREEN;<br>DRAWTEXT_FIX(C&gt;O,0.01,0.95,0,’SGZBK.TOP’),COLORYELLOW;<br>散户:EMA(CLOSE,5),COLORWHITE;<br>操盘:MA(CLOSE,9),COLORCYAN,LINETHICK2;<br>界点:MA(CLOSE,20),COLORMAGENTA;<br>日:&#x3D;150;<br>昨前:&#x3D;3;<br>高1:&#x3D;REF(HHV(H,日),昨前);<br>低1:&#x3D;REF(LLV(L,日),昨前);<br>H1:&#x3D;高1-(高1-低1)*0.191;<br>H2:&#x3D;高1-(高1-低1)*0.382;<br>H3:&#x3D;高1-(高1-低1)*0.5;<br>H4:&#x3D;高1-(高1-低1)*0.618;<br>H5:&#x3D;高1-(高1-低1)*0.809;</font>  </p>
-<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E6%93%8D%E7%9B%98%E4%B9%B0%E5%8D%96-2.png">  </p>
-<p><mark>指标仅供参考，不做投资依据。</mark></p>
+<p>  <mark><strong>源码：</strong></mark>  </p>
+<p>  <font color=e09fde>{一目了然}<br>DRAWGBK(C&gt;0,RGB(20,0,28),RGB(20,0,28),0,0,1);<br>N:&#x3D;240;<br>KK:&#x3D;BARSLAST(CURRBARSCOUNT&#x3D;N);<br>GD:&#x3D;CONST(IF(ISLASTBAR&#x3D;1,HHV(H,KK),0));<br>RR:&#x3D;CONST(IF(ISLASTBAR&#x3D;1,LLV(L,KK),0));<br>KJ:&#x3D;GD-RR;<br>高:IF(CURRBARSCOUNT&lt;&#x3D;N,GD,DRAWNULL),COLOR00FFFF,POINTDOT;<br>压:IF(CURRBARSCOUNT&lt;&#x3D;N,GD-KJ*0.191,DRAWNULL),COLORFF00FF,NODRAW;<br>平衡:IF(CURRBARSCOUNT&lt;&#x3D;N,RR+KJ&#x2F;2,DRAWNULL),COLOR00FFFF,NODRAW;<br>支撑:IF(CURRBARSCOUNT&lt;&#x3D;N,RR+KJ*0.191,DRAWNULL),COLOR00FF00,NODRAW;<br>低:IF(CURRBARSCOUNT&lt;&#x3D;N,RR,DRAWNULL),COLOR00FF00,POINTDOT;<br>天:BARSLAST(L&#x3D;RR),COLOR00FFFF,NODRAW;<br>STICKLINE(CURRBARSCOUNT&#x3D;N,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&#x3D;N,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&#x3D;1,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,平衡,平衡,3,-1),COLORWHITE;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,压,压,3,-1),COLORRED;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,支撑,支撑,3,-1),COLORGREEN;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,压,’0.809’),COLOR0000FF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,平衡,’0.500’),COLORFFFFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,支撑,’0.191’),COLOR00FFFF;<br>DRAWTEXT_FIX(C&gt;O,0.01,0.95,0,’博客：SHUIGESPACE.GITHUB.IO’),COLORYELLOW;<br>A:&#x3D;EMA(C,21)COLORBLUE,LINETHICK3;<br>B:&#x3D;A&lt;REF(A,1);<br>HY:&#x3D;IF(B-1,A,DRAWNULL)COLORRED,LINETHICK3;<br>AA:&#x3D;EMA(C,3) &gt; EMA(C,21);<br>BB:&#x3D;EMA(C,3) &lt; EMA(C,21);<br>CC:&#x3D; EMA(C,3) &gt; EMA(C,8);<br>CC1:&#x3D;EMA(C,3) &lt; EMA(C,8);<br>STICKLINE(AA,L,H,0,0),COLOR0088EE;{金色}<br>STICKLINE(AA,CLOSE,OPEN,3,0),COLOR0055AA;<br>STICKLINE(AA,CLOSE,OPEN,2.8,0),COLOR0066BB;<br>STICKLINE(AA,CLOSE,OPEN,2.5,0),COLOR0077CC;<br>STICKLINE(AA,CLOSE,OPEN,2.2,0),COLOR0088DD;<br>STICKLINE(AA,CLOSE,OPEN,1.7,0),COLOR0099EE;<br>STICKLINE(AA,CLOSE,OPEN,1.2,0),COLOR00AAFF;<br>STICKLINE(AA,CLOSE,OPEN,0.7,0),COLOR00CCFF;<br>STICKLINE(AA,CLOSE,OPEN,0.2,0),COLOR00FFFF;<br>STICKLINE(BB,H,L,0,1),COLORGREEN;{绿色}<br>STICKLINE(BB,C,O,3.2,0),COLOR006600;<br>STICKLINE(BB,C,O,2.6,0),COLOR008800;<br>STICKLINE(BB,C,O,1.9,0),COLOR00AA00;<br>STICKLINE(BB,C,O,1.1,0),COLOR00CC00;<br>STICKLINE(BB,C,O,0.3,0),COLOR00FF00;<br>STICKLINE(BB AND CC,H,L,0,1),COLORFF55FF;{紫色}<br>STICKLINE(BB AND CC,C,O,3.2,0),COLOR880088;<br>STICKLINE(BB AND CC,C,O,2.6,0),COLORAA00AA;<br>STICKLINE(BB AND CC,C,O,1.9,0),COLORCC00CC;<br>STICKLINE(BB AND CC,C,O,1.1,0),COLOREE00EE;<br>STICKLINE(BB AND CC,C,O,0.3,0),COLORFF44FF;<br>STICKLINE(AA AND CC1,H,L,0,1),COLORFF8800;{蓝色}<br>STICKLINE(AA AND CC1,C,O,3.2,0),COLORFF2200;<br>STICKLINE(AA AND CC1,C,O,2.6,0),COLORFF4400;<br>STICKLINE(AA AND CC1,C,O,1.9,0),COLORFF6600;<br>STICKLINE(AA AND CC1,C,O,1.1,0),COLORFF8800;<br>STICKLINE(AA AND CC1,C,O,0.3,0),COLORFFAA00;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,GD-KJ&#x2F;12,’强势区域–急拉减仓!’),COLOR00FFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,GD-KJ&#x2F;3,’●震荡整理–寻机低吸!’),COLOR00FF00;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,RR+KJ&#x2F;3,’◆反弹中轨–逢高休息!’),COLORFFFFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,RR+KJ&#x2F;10,’■弱势区域–暂不参与!’),COLORFFFF00;<br>{}<br>STICKLINE(BARSLAST(CURRBARSCOUNT&#x3D;3)&gt;&#x3D;0,REF(C,BARSLAST(CURRBARSCOUNT&#x3D;3)),REF(C,BARSLAST(CURRBARSCOUNT&#x3D;3)),6,-1),COLORYELLOW;<br>AAA:&#x3D;BARSLAST(DATE!&#x3D;REF(DATE,1));<br>前天收:&#x3D;REF(C,AAA+2)COLORWHITE;<br>{}<br>{高点突破};<br>BDGD:&#x3D;C&#x3D;HHV(C,13);<br>GDSJ:&#x3D;BARSLAST(FILTER(CROSS(0.8,BDGD),2))+1;<br>高点:REF(C,GDSJ),COLORFF00FF,POINTDOT;<br>突破:CROSS(C,REF(高点,1)),COLOR00FFFF,POINTDOT,NODRAW;<br>STICKLINE(GDSJ&lt;&#x3D;6,高点,高点,3,0),COLORFF00FF;<br>DRAWTEXT(突破,LOW,’↑突买’),COLOR00FFFF;<br>DRAWICON(CROSS(C,HHV(突破,’↑突买’)),L,1);</font>  </p>
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-2.png">  </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark>  </p>
 ]]></content>
       <categories>
         <category>公式</category>
       </categories>
       <tags>
-        <tag>副图</tag>
+        <tag>主图</tag>
       </tags>
   </entry>
   <entry>
@@ -186,26 +186,6 @@
       </categories>
       <tags>
         <tag>副图 选股</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>火凤凰主图及选股</title>
-    <url>/posts/14901/</url>
-    <content><![CDATA[<p> <img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%81%AB%E5%87%A4%E5%87%B0-1.png">  </p>
-<p>主图及选股指标公式，信号比较多，结合其它指标使用。  </p>
-<span id="more"></span>  
-<p><mark><strong>主图源码：</strong></mark>  </p>
-<p><font color=b14e53>M1:&#x3D;5;<br>M2:&#x3D;10;<br>M3:&#x3D;22;<br>M4:&#x3D;120;<br>M5:&#x3D;(C-REF(C,1))&#x2F;REF(C,1)*100;<br>STICKLINE(M5&gt;9.8,O,C,3,0),COLORYELLOW;<br>STICKLINE(M5&lt;-9.8,O,C,3,0),COLORGREEN;<br>STICKLINE(LOW &gt;REF(HIGH,1),LOW,REF(HIGH,1),5,1),COLORRED;<br>STICKLINE(C&lt;REF(C,1) AND REF(L,1)&gt;H,REF(L,1),H,5,1),COLORMAGENTA;<br>DRAWTEXT_FIX(C&gt;O,0,0.95,0,’SGZBK.TOP’),COLORWHITE;<br>EMA5:EMA(C,M1),LINETHICK1,COLORBLUE;<br>EMA10:EMA(C,M2),LINETHICK1,COLORYELLOW;<br>EMA22:EMA(C,M3),LINETHICK1,COLORRED;<br>EMA120:EMA(CLOSE,M4),LINETHICK2,COLORGREEN;<br>ZB1:&#x3D;EMA5&gt;&#x3D;EMA10 AND EMA10&gt;&#x3D;EMA22;<br>ZB2:&#x3D;EMA22&gt;&#x3D;EMA10 AND EMA10&gt;&#x3D;EMA5;<br>DRAWICON(CROSS(EMA5,EMA10),L,34);<br>DRAWICON(CROSS(EMA10,EMA5),H,35);<br>DRAWTEXT(ZB1&gt;REF(ZB1,1),L,’↑火凤凰’),COLORRED;<br>DRAWTEXT(ZB2&gt;REF(ZB2,1),H,’↓凤凰尾’),COLORGREEN;</font>  </p>
-<p><mark><strong>选股源码：</strong></mark></p>
-<p><font color=df7251>M1:&#x3D;5;<br>M2:&#x3D;10;<br>M3:&#x3D;22;<br>M4:&#x3D;120;<br>M5:&#x3D;(C-REF(C,1))&#x2F;REF(C,1)*100;<br>EMA5:&#x3D;EMA(C,M1);<br>EMA10:&#x3D;EMA(C,M2);<br>EMA22:&#x3D;EMA(C,M3);<br>ZB1:&#x3D;EMA5&gt;&#x3D;EMA10 AND EMA10&gt;&#x3D;EMA22;<br>ZB2:&#x3D;EMA22&gt;&#x3D;EMA10 AND EMA10&gt;&#x3D;EMA5;<br>XG:ZB1&gt;REF(ZB1,1);</font> </p>
-<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%81%AB%E5%87%A4%E5%87%B0-2.png"> </p>
-<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
-]]></content>
-      <categories>
-        <category>公式</category>
-      </categories>
-      <tags>
-        <tag>主图 选股</tag>
       </tags>
   </entry>
   <entry>
@@ -229,24 +209,6 @@
       </tags>
   </entry>
   <entry>
-    <title>祼K线主图</title>
-    <url>/posts/53411/</url>
-    <content><![CDATA[<p>  <img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-1.png">  </p>
-<p>  一个主图公式，看图就明白用法，没什么复杂的。</p>
-<span id="more"></span>
-<p>  <mark><strong>源码：</strong></mark>  </p>
-<p>  <font color=e09fde>{一目了然}<br>DRAWGBK(C&gt;0,RGB(20,0,28),RGB(20,0,28),0,0,1);<br>N:&#x3D;240;<br>KK:&#x3D;BARSLAST(CURRBARSCOUNT&#x3D;N);<br>GD:&#x3D;CONST(IF(ISLASTBAR&#x3D;1,HHV(H,KK),0));<br>RR:&#x3D;CONST(IF(ISLASTBAR&#x3D;1,LLV(L,KK),0));<br>KJ:&#x3D;GD-RR;<br>高:IF(CURRBARSCOUNT&lt;&#x3D;N,GD,DRAWNULL),COLOR00FFFF,POINTDOT;<br>压:IF(CURRBARSCOUNT&lt;&#x3D;N,GD-KJ*0.191,DRAWNULL),COLORFF00FF,NODRAW;<br>平衡:IF(CURRBARSCOUNT&lt;&#x3D;N,RR+KJ&#x2F;2,DRAWNULL),COLOR00FFFF,NODRAW;<br>支撑:IF(CURRBARSCOUNT&lt;&#x3D;N,RR+KJ*0.191,DRAWNULL),COLOR00FF00,NODRAW;<br>低:IF(CURRBARSCOUNT&lt;&#x3D;N,RR,DRAWNULL),COLOR00FF00,POINTDOT;<br>天:BARSLAST(L&#x3D;RR),COLOR00FFFF,NODRAW;<br>STICKLINE(CURRBARSCOUNT&#x3D;N,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&#x3D;N,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&#x3D;1,GD,RR,0,-1),COLORGREEN;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,平衡,平衡,3,-1),COLORWHITE;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,压,压,3,-1),COLORRED;<br>STICKLINE(CURRBARSCOUNT&lt;&#x3D;N,支撑,支撑,3,-1),COLORGREEN;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,压,’0.809’),COLOR0000FF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,平衡,’0.500’),COLORFFFFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;1,支撑,’0.191’),COLOR00FFFF;<br>DRAWTEXT_FIX(C&gt;O,0.01,0.95,0,’博客：SHUIGESPACE.GITHUB.IO’),COLORYELLOW;<br>A:&#x3D;EMA(C,21)COLORBLUE,LINETHICK3;<br>B:&#x3D;A&lt;REF(A,1);<br>HY:&#x3D;IF(B-1,A,DRAWNULL)COLORRED,LINETHICK3;<br>AA:&#x3D;EMA(C,3) &gt; EMA(C,21);<br>BB:&#x3D;EMA(C,3) &lt; EMA(C,21);<br>CC:&#x3D; EMA(C,3) &gt; EMA(C,8);<br>CC1:&#x3D;EMA(C,3) &lt; EMA(C,8);<br>STICKLINE(AA,L,H,0,0),COLOR0088EE;{金色}<br>STICKLINE(AA,CLOSE,OPEN,3,0),COLOR0055AA;<br>STICKLINE(AA,CLOSE,OPEN,2.8,0),COLOR0066BB;<br>STICKLINE(AA,CLOSE,OPEN,2.5,0),COLOR0077CC;<br>STICKLINE(AA,CLOSE,OPEN,2.2,0),COLOR0088DD;<br>STICKLINE(AA,CLOSE,OPEN,1.7,0),COLOR0099EE;<br>STICKLINE(AA,CLOSE,OPEN,1.2,0),COLOR00AAFF;<br>STICKLINE(AA,CLOSE,OPEN,0.7,0),COLOR00CCFF;<br>STICKLINE(AA,CLOSE,OPEN,0.2,0),COLOR00FFFF;<br>STICKLINE(BB,H,L,0,1),COLORGREEN;{绿色}<br>STICKLINE(BB,C,O,3.2,0),COLOR006600;<br>STICKLINE(BB,C,O,2.6,0),COLOR008800;<br>STICKLINE(BB,C,O,1.9,0),COLOR00AA00;<br>STICKLINE(BB,C,O,1.1,0),COLOR00CC00;<br>STICKLINE(BB,C,O,0.3,0),COLOR00FF00;<br>STICKLINE(BB AND CC,H,L,0,1),COLORFF55FF;{紫色}<br>STICKLINE(BB AND CC,C,O,3.2,0),COLOR880088;<br>STICKLINE(BB AND CC,C,O,2.6,0),COLORAA00AA;<br>STICKLINE(BB AND CC,C,O,1.9,0),COLORCC00CC;<br>STICKLINE(BB AND CC,C,O,1.1,0),COLOREE00EE;<br>STICKLINE(BB AND CC,C,O,0.3,0),COLORFF44FF;<br>STICKLINE(AA AND CC1,H,L,0,1),COLORFF8800;{蓝色}<br>STICKLINE(AA AND CC1,C,O,3.2,0),COLORFF2200;<br>STICKLINE(AA AND CC1,C,O,2.6,0),COLORFF4400;<br>STICKLINE(AA AND CC1,C,O,1.9,0),COLORFF6600;<br>STICKLINE(AA AND CC1,C,O,1.1,0),COLORFF8800;<br>STICKLINE(AA AND CC1,C,O,0.3,0),COLORFFAA00;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,GD-KJ&#x2F;12,’强势区域–急拉减仓!’),COLOR00FFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,GD-KJ&#x2F;3,’●震荡整理–寻机低吸!’),COLOR00FF00;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,RR+KJ&#x2F;3,’◆反弹中轨–逢高休息!’),COLORFFFFFF;<br>DRAWTEXT(CURRBARSCOUNT&#x3D;N&#x2F;2+9,RR+KJ&#x2F;10,’■弱势区域–暂不参与!’),COLORFFFF00;<br>{}<br>STICKLINE(BARSLAST(CURRBARSCOUNT&#x3D;3)&gt;&#x3D;0,REF(C,BARSLAST(CURRBARSCOUNT&#x3D;3)),REF(C,BARSLAST(CURRBARSCOUNT&#x3D;3)),6,-1),COLORYELLOW;<br>AAA:&#x3D;BARSLAST(DATE!&#x3D;REF(DATE,1));<br>前天收:&#x3D;REF(C,AAA+2)COLORWHITE;<br>{}<br>{高点突破};<br>BDGD:&#x3D;C&#x3D;HHV(C,13);<br>GDSJ:&#x3D;BARSLAST(FILTER(CROSS(0.8,BDGD),2))+1;<br>高点:REF(C,GDSJ),COLORFF00FF,POINTDOT;<br>突破:CROSS(C,REF(高点,1)),COLOR00FFFF,POINTDOT,NODRAW;<br>STICKLINE(GDSJ&lt;&#x3D;6,高点,高点,3,0),COLORFF00FF;<br>DRAWTEXT(突破,LOW,’↑突买’),COLOR00FFFF;<br>DRAWICON(CROSS(C,HHV(突破,’↑突买’)),L,1);</font>  </p>
-<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A3%B8K-2.png">  </p>
-<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark>  </p>
-]]></content>
-      <categories>
-        <category>公式</category>
-      </categories>
-      <tags>
-        <tag>主图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>见底资金入场副图</title>
     <url>/posts/1966/</url>
     <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A7%81%E5%BA%95%E8%B5%84%E9%87%91-1.png">  </p>
@@ -255,6 +217,24 @@
 <p><mark><strong>源码：</strong></mark></p>
 <p><font color=b14e53>RV3:&#x3D;REF(L,1);<br>MA58:&#x3D;MA(C,58);<br>LV30:&#x3D;LLV(L,30);<br>VAR1:&#x3D;EMA(HHV(H,500),21);<br>VAR2:&#x3D;EMA(HHV(H,250),21);<br>VAR3:&#x3D;EMA(HHV(H,90),21);<br>VAR4:&#x3D;EMA(LLV(L,500),21);<br>VAR5:&#x3D;EMA(LLV(L,250),21);<br>VAR6:&#x3D;EMA(LLV(L,90),21);<br>VAR7:&#x3D;EMA((VAR4<em>0.96+VAR5</em>0.96+VAR6<em>0.96+VAR1</em>0.558+VAR2<em>0.558+VAR3</em>0.558)&#x2F;6,21);<br>VAR8:&#x3D;EMA((VAR4<em>1.25+VAR5</em>1.23+VAR6<em>1.2+VAR1</em>0.55+VAR2<em>0.55+VAR3</em>0.65)&#x2F;6,21);<br>VAR9:&#x3D;EMA((VAR4<em>1.3+VAR5</em>1.3+VAR6<em>1.3+VAR1</em>0.68+VAR2<em>0.68+VAR3</em>0.68)&#x2F;6,21);<br>VARA:&#x3D;EMA((VAR7<em>3+VAR8</em>2+VAR9)&#x2F;6*1.738,21);<br>VARC:&#x3D;SMA(ABS(L-RV3),3,1)&#x2F;SMA(MAX(L-RV3,0),3,1)<em>100;<br>VARD:&#x3D;EMA(IF(C</em>1.35&lt;&#x3D;VARA,VARC*10,VARC&#x2F;10),3);<br>VARF:&#x3D;HHV(VARD,30);<br>VARE:&#x3D;IF(MA58,1,0);<br>DRAWTEXT_FIX(C&gt;O,0.01,0.9,0,’SGZBK.TOP’),COLORYELLOW;<br>资金入场:&#x3D;EMA(IF(L&lt;&#x3D;LV30,(VARD+VARF*2)&#x2F;2,0),3)&#x2F;618*VARE;<br>见底:IF(FILTER(资金入场&gt;1,5) AND REF(资金入场,1)&lt;&#x3D;0.5,1,DRAWNULL),COLORFF00AA,NODRAW;<br>STICKLINE(见底,0,8,4,0),COLORFF00AA;<br>STICKLINE(见底,8,5,4,0),COLORRED;</font></p>
 <p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E8%A7%81%E5%BA%95%E8%B5%84%E9%87%91-2.png">  </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
+]]></content>
+      <categories>
+        <category>公式</category>
+      </categories>
+      <tags>
+        <tag>副图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>顶底三合一副图</title>
+    <url>/posts/53972/</url>
+    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E9%A1%B6%E5%BA%95%E4%B8%89%E5%90%88%E4%B8%80-1.png"> </p>
+<p>副图指标，有倾买，低买，金山等多种信号，白线上穿红线就是机会。</p>
+<span id="more"></span>
+<p><mark><strong>源码：</strong></mark></p>
+<p><font color=b14e53>趋势:&#x3D;3<em>SMA((CLOSE-LLV(LOW,27))&#x2F;(HHV(HIGH,27)-LLV(LOW,27))<em>100,5,1)-2</em>SMA(SMA((CLOSE-LLV(LOW,27))&#x2F;(HHV(HIGH,27)-LLV(LOW,27))<em>100,5,1),3,1);<br>见底:&#x3D;10;<br>短期底部:CROSS(趋势,见底);<br>Q2:&#x3D;(CLOSE-LLV(LOW,18))&#x2F;(HHV(HIGH,18)-LLV(LOW,18))<em>100;<br>Q3:&#x3D;SMA(Q2,9,1);<br>Q4:&#x3D;SMA(Q3,3,1);<br>长趋势:3</em>Q3-2</em>Q4,COLORWHITE,LINETHICK3;<br>趋势线:EMA(Q3,3),COLORRED,LINETHICK3;<br>DRAWTEXT(CROSS(趋势线,长趋势) AND REF(长趋势,1)&gt;80,REF(长趋势,3),’<em>顶’),COLORRED,LINETHICK5;<br>★逢低买入:DRAWTEXT(REF(CROSS(趋势线,长趋势),82) AND 趋势线&gt;1.3</em>长趋势,长趋势,’★&lt;&lt;-逢低买入’),LINETHICK1;<br>★低买:DRAWTEXT(REF(CROSS(长趋势,趋势线),1) AND 长趋势&gt;1.3</em>趋势线,趋势线,’★低买’),COLORRED,LINETHICK1;<br>HLM1:&#x3D;MA(HHV(H,500),13);<br>HLM2:&#x3D;MA(HHV(H,250),13);<br>HLM3:&#x3D;MA(HHV(H,89),13);<br>HLM4:&#x3D;MA(LLV(L,500),13);<br>HLM5:&#x3D;MA(LLV(L,250),13);<br>HLM6:&#x3D;MA(LLV(L,89),13);<br>HLM7:&#x3D;MA((HLM1<em>0.558+HLM2</em>0.558+HLM3<em>0.558+HLM4</em>0.96+HLM5<em>0.96+HLM6</em>0.96)&#x2F;6,17);<br>HLM8:&#x3D;MA((HLM1<em>0.55+HLM2</em>0.55+HLM3<em>0.65+HLM4</em>1.25+HLM5<em>1.23+HLM6</em>1.2)&#x2F;6,17);<br>HLM9:&#x3D;MA((HLM1<em>0.68+HLM2</em>0.68+HLM3<em>0.68+HLM4</em>1.3+HLM5<em>1.3+HLM6</em>1.3)&#x2F;6,17);<br>HLM10:&#x3D;MA((HLM7<em>3+HLM8</em>2+HLM9)&#x2F;6*1.738,17);<br>HLM11:&#x3D;SMA(ABS(L-REF(L,1)),3,1)&#x2F;SMA(MAX(L-REF(L,1),0),3,1)<em>100;<br>HLM12:&#x3D;MA(IF(C</em>1.35&lt;&#x3D;HLM10,HLM11*10,HLM11&#x2F;10),3);<br>HLMH:&#x3D;HHV(HLM12,30);<br>关注:MA(IF(L&lt;&#x3D;LLV(L,42),(HLMH+HLM11*2)&#x2F;3,0),3)&#x2F;200;<br>DRAWBAND(关注,RGB(255,255,50),0.00001,RGB(0,100,50));<br>DRAWTEXT_FIX(C&gt;O,0.01,0.9,0,’SGZBK.TOP’),COLORYELLOW;<br>STICKLINE(CROSS(3.8,关注) AND 关注&lt;REF(关注,1),0,3.8,1,0),COLORFF00FF;<br>DRAWTEXT(CROSS(3.8,关注) AND 关注&lt;REF(关注,1),3.8,’买底’),COLORFF00FF;<br>STICKLINE(CROSS(10,关注) AND 关注&lt;REF(关注,1),0,10,2,0),COLORYELLOW;<br>DRAWTEXT(CROSS(10,关注) AND 关注&lt;REF(关注,1),10,’金山’),COLORYELLOW;<br>STICKLINE(CROSS(62,关注) AND 关注&lt;REF(关注,1),0,18,4,0),COLORRED;<br>DRAWTEXT(CROSS(38,关注) AND 关注&lt;REF(关注,1),18,’倾买’),COLORRED;<br>JS:&#x3D;LAST(关注&gt;0.618,3,1) AND (COUNT(CROSS(0.618,关注) OR CROSS(62,关注),21)&gt;&#x3D;2);<br>STICKLINE(FILTER(JS,13),15,0,4,0),COLORRED;<br>DRAWTEXT(FILTER(JS,13),15,’←★★★牛’),COLORRED;</font></p>
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E9%A1%B6%E5%BA%95%E4%B8%89%E5%90%88%E4%B8%80-2.png"> </p>
 <p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
 ]]></content>
       <categories>
@@ -283,21 +263,41 @@
       </tags>
   </entry>
   <entry>
-    <title>顶底三合一副图</title>
-    <url>/posts/53972/</url>
-    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E9%A1%B6%E5%BA%95%E4%B8%89%E5%90%88%E4%B8%80-1.png"> </p>
-<p>副图指标，有倾买，低买，金山等多种信号，白线上穿红线就是机会。</p>
+    <title>操盘买卖主图</title>
+    <url>/posts/12193/</url>
+    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E6%93%8D%E7%9B%98%E4%B9%B0%E5%8D%96-1.png">  </p>
+<p>指标简单明了，根据红色箭头操作，就这样。  </p>
 <span id="more"></span>
-<p><mark><strong>源码：</strong></mark></p>
-<p><font color=b14e53>趋势:&#x3D;3<em>SMA((CLOSE-LLV(LOW,27))&#x2F;(HHV(HIGH,27)-LLV(LOW,27))<em>100,5,1)-2</em>SMA(SMA((CLOSE-LLV(LOW,27))&#x2F;(HHV(HIGH,27)-LLV(LOW,27))<em>100,5,1),3,1);<br>见底:&#x3D;10;<br>短期底部:CROSS(趋势,见底);<br>Q2:&#x3D;(CLOSE-LLV(LOW,18))&#x2F;(HHV(HIGH,18)-LLV(LOW,18))<em>100;<br>Q3:&#x3D;SMA(Q2,9,1);<br>Q4:&#x3D;SMA(Q3,3,1);<br>长趋势:3</em>Q3-2</em>Q4,COLORWHITE,LINETHICK3;<br>趋势线:EMA(Q3,3),COLORRED,LINETHICK3;<br>DRAWTEXT(CROSS(趋势线,长趋势) AND REF(长趋势,1)&gt;80,REF(长趋势,3),’<em>顶’),COLORRED,LINETHICK5;<br>★逢低买入:DRAWTEXT(REF(CROSS(趋势线,长趋势),82) AND 趋势线&gt;1.3</em>长趋势,长趋势,’★&lt;&lt;-逢低买入’),LINETHICK1;<br>★低买:DRAWTEXT(REF(CROSS(长趋势,趋势线),1) AND 长趋势&gt;1.3</em>趋势线,趋势线,’★低买’),COLORRED,LINETHICK1;<br>HLM1:&#x3D;MA(HHV(H,500),13);<br>HLM2:&#x3D;MA(HHV(H,250),13);<br>HLM3:&#x3D;MA(HHV(H,89),13);<br>HLM4:&#x3D;MA(LLV(L,500),13);<br>HLM5:&#x3D;MA(LLV(L,250),13);<br>HLM6:&#x3D;MA(LLV(L,89),13);<br>HLM7:&#x3D;MA((HLM1<em>0.558+HLM2</em>0.558+HLM3<em>0.558+HLM4</em>0.96+HLM5<em>0.96+HLM6</em>0.96)&#x2F;6,17);<br>HLM8:&#x3D;MA((HLM1<em>0.55+HLM2</em>0.55+HLM3<em>0.65+HLM4</em>1.25+HLM5<em>1.23+HLM6</em>1.2)&#x2F;6,17);<br>HLM9:&#x3D;MA((HLM1<em>0.68+HLM2</em>0.68+HLM3<em>0.68+HLM4</em>1.3+HLM5<em>1.3+HLM6</em>1.3)&#x2F;6,17);<br>HLM10:&#x3D;MA((HLM7<em>3+HLM8</em>2+HLM9)&#x2F;6*1.738,17);<br>HLM11:&#x3D;SMA(ABS(L-REF(L,1)),3,1)&#x2F;SMA(MAX(L-REF(L,1),0),3,1)<em>100;<br>HLM12:&#x3D;MA(IF(C</em>1.35&lt;&#x3D;HLM10,HLM11*10,HLM11&#x2F;10),3);<br>HLMH:&#x3D;HHV(HLM12,30);<br>关注:MA(IF(L&lt;&#x3D;LLV(L,42),(HLMH+HLM11*2)&#x2F;3,0),3)&#x2F;200;<br>DRAWBAND(关注,RGB(255,255,50),0.00001,RGB(0,100,50));<br>DRAWTEXT_FIX(C&gt;O,0.01,0.9,0,’SGZBK.TOP’),COLORYELLOW;<br>STICKLINE(CROSS(3.8,关注) AND 关注&lt;REF(关注,1),0,3.8,1,0),COLORFF00FF;<br>DRAWTEXT(CROSS(3.8,关注) AND 关注&lt;REF(关注,1),3.8,’买底’),COLORFF00FF;<br>STICKLINE(CROSS(10,关注) AND 关注&lt;REF(关注,1),0,10,2,0),COLORYELLOW;<br>DRAWTEXT(CROSS(10,关注) AND 关注&lt;REF(关注,1),10,’金山’),COLORYELLOW;<br>STICKLINE(CROSS(62,关注) AND 关注&lt;REF(关注,1),0,18,4,0),COLORRED;<br>DRAWTEXT(CROSS(38,关注) AND 关注&lt;REF(关注,1),18,’倾买’),COLORRED;<br>JS:&#x3D;LAST(关注&gt;0.618,3,1) AND (COUNT(CROSS(0.618,关注) OR CROSS(62,关注),21)&gt;&#x3D;2);<br>STICKLINE(FILTER(JS,13),15,0,4,0),COLORRED;<br>DRAWTEXT(FILTER(JS,13),15,’←★★★牛’),COLORRED;</font></p>
-<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E9%A1%B6%E5%BA%95%E4%B8%89%E5%90%88%E4%B8%80-2.png"> </p>
-<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
+<p><mark><strong>源码：</strong></mark>  </p>
+<p><font color=e09fde>AA:&#x3D;EMA(C,2);<br>BB:&#x3D;EMA(SLOPE(C,21)*20+C,42);<br>买:&#x3D;CROSS(AA,BB);<br>卖:&#x3D;CROSS(BB,AA);<br>DRAWICON(买,L-0.1,1);<br>DRAWICON(卖,H+0.1,2);<br>STICKLINE(AA&gt;&#x3D;BB,LOW,HIGH,0.0,1),COLORRED;<br>STICKLINE(AA&gt;&#x3D;BB,CLOSE,OPEN,2,1),COLORRED;<br>STICKLINE(AA&lt;BB,LOW,HIGH,0.0,1),COLORGREEN;<br>STICKLINE(AA&lt;BB,CLOSE,OPEN,2,1),COLORGREEN;<br>DRAWTEXT_FIX(C&gt;O,0.01,0.95,0,’SGZBK.TOP’),COLORYELLOW;<br>散户:EMA(CLOSE,5),COLORWHITE;<br>操盘:MA(CLOSE,9),COLORCYAN,LINETHICK2;<br>界点:MA(CLOSE,20),COLORMAGENTA;<br>日:&#x3D;150;<br>昨前:&#x3D;3;<br>高1:&#x3D;REF(HHV(H,日),昨前);<br>低1:&#x3D;REF(LLV(L,日),昨前);<br>H1:&#x3D;高1-(高1-低1)*0.191;<br>H2:&#x3D;高1-(高1-低1)*0.382;<br>H3:&#x3D;高1-(高1-低1)*0.5;<br>H4:&#x3D;高1-(高1-低1)*0.618;<br>H5:&#x3D;高1-(高1-低1)*0.809;</font>  </p>
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E6%93%8D%E7%9B%98%E4%B9%B0%E5%8D%96-2.png">  </p>
+<p><mark>指标仅供参考，不做投资依据。</mark></p>
 ]]></content>
       <categories>
         <category>公式</category>
       </categories>
       <tags>
         <tag>副图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的网站开通了</title>
+    <url>/posts/33614/</url>
+    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/68b8661f58f11b28dfc6a0c4884b193a.gif"></p>
+<p><mark style="background-color: #f4a460">开心呀！经历千辛万苦，终于把网站搭建好了。</mark>真不容易，但作为一个爱折腾的人，那种过程很酸爽，痛并快乐着，<font color=#f08080>欢迎大家光临我的网站，你会有意想不到的收获。</font>   </p>
+<span id="more"></span>
+
+<p> <img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E5%A4%AA%E9%9A%BE%E4%BA%86.png">  </p>
+<p>其实，一直以来我都有建立一个自己的网站的想法，在CSDN，博客园，知乎上发表文章，用户交互做的很好，作品也能在百度搜索的到。但缺点也明显，平台各种限制，还有讨厌的广告。我在知乎，CSDN都有账号（没怎么用），还有公众号，如果大家是从这些平台上过来的，会感觉到我已经很少发文了，真的没有兴趣，提不起劲。  </p>
+<p>网站是基于博客系统（hexo）搭建，使用next主题，个人感觉很nice，如果大家有什么好的建议，请指正，我再作修改。真的太难了，为了把网站做好，一直在修改，其中遇到n多的问题，最终还是克服了困难，现在基本是定型，不会做太大的改动，而且在这里花费了太多的时间，就这样吧。  </p>
+<p><font color=f08ae8>生命不息，折腾不止。</font>我在这里主要是分享通达信公式，偶尔会有一些股票方面杂七杂八的东西，这个网站也可以说是个人的一个博客，大家有兴趣可以常来看看，请大家多多支持和鼓励，<mark style="background-color: #f4a460">你们的鼓励，是我最大的动力！</mark>  </p>
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%81%AF%E5%92%8C%E8%BD%A6.jpg"></p>
+]]></content>
+      <categories>
+        <category>闲聊</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
       </tags>
   </entry>
 </search>
