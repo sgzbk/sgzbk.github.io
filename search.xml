@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>猎庄出击</title>
+    <url>/posts/27275/</url>
+    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%8C%8E%E5%BA%84%E5%87%BA%E5%87%BB-1.png"> </p>
+<p>网络上的一个指标，我稍为做了一下修改，把多余的条件去掉了。出现紫色柱子时，是买入信号，柱子越高越好。<span id="more"></span></p>
+<p><mark><font color=red><strong>副图源码：</strong></font></mark></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">SG1:=<span class="built_in">REF</span>(L,<span class="number">1</span>);</span><br><span class="line">SG2:=<span class="built_in">SMA</span>(<span class="built_in">ABS</span>(L-SG1),<span class="number">3</span>,<span class="number">1</span>)/<span class="built_in">SMA</span>(<span class="built_in">MAX</span>(L-SG1,<span class="number">0</span>),<span class="number">3</span>,<span class="number">1</span>)*<span class="number">100</span>;</span><br><span class="line">SG3:=<span class="built_in">EMA</span>(<span class="built_in">IF</span>(C*<span class="number">1.2</span>,SG2*<span class="number">10</span>,SG2/<span class="number">10</span>),<span class="number">3</span>);</span><br><span class="line">SG4:=<span class="built_in">LLV</span>(L,<span class="number">38</span>);</span><br><span class="line">SG5:=<span class="built_in">HHV</span>(SG3,<span class="number">38</span>);</span><br><span class="line">SG6:=<span class="built_in">IF</span>(<span class="built_in">LLV</span>(L,<span class="number">90</span>),<span class="number">1</span>,<span class="number">0</span>);</span><br><span class="line">SG7:=<span class="built_in">EMA</span>(<span class="built_in">IF</span>(L&lt;=SG4,(SG3+SG5*<span class="number">2</span>)/<span class="number">2</span>,<span class="number">0</span>),<span class="number">3</span>)/<span class="number">618</span>*SG6;</span><br><span class="line">SG:<span class="built_in">STICKLINE</span>(<span class="number">1</span>,SG7,<span class="number">0</span>,<span class="number">4</span>,<span class="number">1</span>),COLORF000FF;</span><br><span class="line">ZB:=SG7&gt;<span class="number">5</span>;</span><br><span class="line">买入:<span class="built_in">IF</span>((<span class="built_in">COUNT</span>(ZB,<span class="number">2</span>)=<span class="number">2</span>),-<span class="number">20</span>,-<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
+
+<p><mark><font color=red><strong>选股：</strong></font></mark></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">SG1:=<span class="built_in">REF</span>(L,<span class="number">1</span>);</span><br><span class="line">SG2:=<span class="built_in">SMA</span>(<span class="built_in">ABS</span>(L-SG1),<span class="number">3</span>,<span class="number">1</span>)/<span class="built_in">SMA</span>(<span class="built_in">MAX</span>(L-SG1,<span class="number">0</span>),<span class="number">3</span>,<span class="number">1</span>)*<span class="number">100</span>;</span><br><span class="line">SG3:=<span class="built_in">EMA</span>(<span class="built_in">IF</span>(C*<span class="number">1.2</span>,SG2*<span class="number">10</span>,SG2/<span class="number">10</span>),<span class="number">3</span>);</span><br><span class="line">SG4:=<span class="built_in">LLV</span>(L,<span class="number">38</span>);</span><br><span class="line">SG5:=<span class="built_in">HHV</span>(SG3,<span class="number">38</span>);</span><br><span class="line">SG6:=<span class="built_in">IF</span>(<span class="built_in">LLV</span>(L,<span class="number">90</span>),<span class="number">1</span>,<span class="number">0</span>);</span><br><span class="line">SG7:=<span class="built_in">EMA</span>(<span class="built_in">IF</span>(L&lt;=SG4,(SG3+SG5*<span class="number">2</span>)/<span class="number">2</span>,<span class="number">0</span>),<span class="number">3</span>)/<span class="number">618</span>*SG6;</span><br><span class="line">ZB:=SG7&gt;<span class="number">5</span>;</span><br><span class="line">买入:<span class="built_in">IF</span>((<span class="built_in">COUNT</span>(ZB,<span class="number">2</span>)=<span class="number">2</span>),-<span class="number">20</span>,-<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%8C%8E%E5%BA%84%E5%87%BA%E5%87%BB-2.png"> </p>
+<p><mark style="background-color: #ff0a5"><font color=red>指标仅供参考，不作投资依据。</font></mark></p>
+]]></content>
+      <categories>
+        <category>公式</category>
+      </categories>
+      <tags>
+        <tag>副图 选股</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>通达信黄金主图</title>
     <url>/posts/30499/</url>
     <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E9%BB%84%E9%87%91%E4%B8%BB%E5%9B%BE-1.png">  </p>
