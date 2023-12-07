@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-2.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-1.jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"sgzbk.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="这套指标包含主图，副图及选股，在某些网站上属于收费指标，价值不菲，现无偿分享出来。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="七彩金钻">
+<meta property="og:url" content="http://sgzbk.top/posts/64399/index.html">
+<meta property="og:site_name" content="水哥指标库">
+<meta property="og:description" content="这套指标包含主图，副图及选股，在某些网站上属于收费指标，价值不菲，现无偿分享出来。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%83%E5%BD%A9%E9%87%91%E9%92%BB-1.png">
+<meta property="og:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%83%E5%BD%A9%E9%87%91%E9%92%BB-2.png">
+<meta property="article:published_time" content="2023-12-07T18:10:18.000Z">
+<meta property="article:modified_time" content="2023-12-07T18:31:39.565Z">
+<meta property="article:author" content="shuige">
+<meta property="article:tag" content="主图 副图 选股">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%83%E5%BD%A9%E9%87%91%E9%92%BB-1.png">
+
+<link rel="canonical" href="http://sgzbk.top/posts/64399/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>七彩金钻 | 水哥指标库</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">水哥指标库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">发现价值 创造价值</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">33</span></a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://sgzbk.top/posts/64399/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="shuige">
+      <meta itemprop="description" content="心有所期 忙而不茫">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="水哥指标库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          七彩金钻
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-12-08 02:10:18 / 修改时间：02:31:39" itemprop="dateCreated datePublished" datetime="2023-12-08T02:10:18+08:00">2023-12-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%85%AC%E5%BC%8F/" itemprop="url" rel="index"><span itemprop="name">公式</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/posts/64399/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/64399/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>7.5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>7 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%83%E5%BD%A9%E9%87%91%E9%92%BB-1.png">  </p>
+<p>这套指标包含主图，副图及选股，在某些网站上属于收费指标，价值不菲，现无偿分享出来。<span id="more"></span><br>使用说明：<br>1、主图由七种不同颜色的K线、一条多空线以及两条上下的趋势线组成；<br>2、不同的颜色代表个股不同的阶段，主图右下角有标注，可以根据不同信号进行判断，直观简便；<br>3、副图有两个信号提示，出现金钻信号代表强势和启动，可以考虑介入，出现绿钻则代表能量不足，适时离场；<br>4、选股主要是根据金钻信号选出，都是比较强势的参考启动点；</p>
+<p><mark><font color=red><strong>主图源码：</strong></font></mark>  </p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">周期<span class="operator">:=</span><span class="number">13</span><span class="operator">;</span></span><br><span class="line">文字位置<span class="operator">:=</span><span class="number">30</span><span class="operator">;</span></span><br><span class="line"><span class="built_in">N</span><span class="operator">:=</span><span class="number">9</span><span class="operator">;</span></span><br><span class="line">乖离<span class="number">24</span><span class="operator">:=</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">-</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">24</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">/</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">24</span><span class="punctuation">)</span><span class="operator">*</span><span class="number">100</span><span class="operator">;</span></span><br><span class="line">向上<span class="operator">:=</span><span class="variable">REF</span><span class="punctuation">(</span>乖离<span class="number">24</span><span class="operator">,</span><span class="number">1</span><span class="punctuation">)</span><span class="operator">&lt;</span><span class="number">0</span> <span class="variable">AND</span> 乖离<span class="number">24</span><span class="operator">&gt;</span><span class="number">0</span><span class="operator">;</span></span><br><span class="line">没涨<span class="operator">:=</span><span class="punctuation">(</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">-</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">,</span><span class="number">10</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">/</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">*</span><span class="number">100</span><span class="operator">&gt;</span><span class="number">0</span> <span class="variable">AND</span> <span class="punctuation">(</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">-</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">,</span><span class="number">10</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">/</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">*</span><span class="number">100</span><span class="operator">&lt;</span><span class="number">20</span><span class="operator">;</span></span><br><span class="line">拐点<span class="operator">:=</span><span class="variable">VALUEWHEN</span><span class="punctuation">(</span>向上<span class="operator">=</span><span class="number">1</span> <span class="variable">AND</span> 没涨<span class="operator">=</span><span class="number">1</span><span class="operator">,</span><span class="built_in">C</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line">平衡线<span class="number">1</span><span class="operator">:=</span>拐点<span class="operator">*</span><span class="number">1.5</span><span class="operator">;</span></span><br><span class="line"><span class="variable">ASD</span><span class="operator">:=</span><span class="variable">MA</span><span class="punctuation">(</span><span class="variable">CYC</span><span class="operator">.</span><span class="variable">CYC3</span><span class="operator">,</span><span class="number">20</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line">多空平衡点<span class="operator">:=</span><span class="variable">ASD</span><span class="operator">*</span><span class="number">1.4</span><span class="operator">;</span></span><br><span class="line">第一防守<span class="operator">:=</span><span class="variable">ASD</span><span class="operator">*</span><span class="number">1</span><span class="operator">;</span></span><br><span class="line">第二防守<span class="operator">:=</span><span class="variable">ASD</span><span class="operator">*</span><span class="number">0.9</span><span class="operator">;</span></span><br><span class="line"><span class="variable">CG</span><span class="operator">:</span><span class="variable">WMA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="built_in">N</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">LINETHICK2</span><span class="operator">,</span><span class="variable">COLORRED</span><span class="operator">;</span></span><br><span class="line"><span class="variable">FL</span><span class="operator">:=</span><span class="variable">HHV</span><span class="punctuation">(</span><span class="variable">CG</span><span class="operator">,</span><span class="number">5</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">FS</span><span class="operator">:=</span><span class="variable">CG</span><span class="operator">-</span><span class="punctuation">(</span><span class="variable">FL</span><span class="operator">-</span><span class="variable">CG</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">IF</span><span class="punctuation">(</span><span class="variable">CG</span><span class="operator">&lt;&gt;</span><span class="variable">FS</span><span class="operator">,</span><span class="variable">CG</span><span class="operator">,</span><span class="variable">DRAWNULL</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORGREEN</span><span class="operator">,</span><span class="variable">LINETHICK2</span><span class="operator">;</span></span><br><span class="line"><span class="variable">AMV0</span><span class="operator">:=</span><span class="variable">VOL</span><span class="operator">*</span><span class="punctuation">(</span><span class="built_in">O</span><span class="operator">+</span><span class="built_in">C</span><span class="operator">+</span><span class="variable">H</span><span class="operator">+</span><span class="variable">L</span><span class="punctuation">)</span><span class="operator">/</span><span class="number">4</span><span class="operator">;</span></span><br><span class="line"><span class="variable">NOTEXT</span>势<span class="operator">:</span><span class="variable">EMA</span><span class="punctuation">(</span><span class="variable">AMV0</span><span class="operator">,</span><span class="number">21</span><span class="punctuation">)</span><span class="operator">/</span><span class="variable">EMA</span><span class="punctuation">(</span><span class="variable">VOL</span><span class="operator">,</span><span class="number">21</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line"><span class="variable">NOTEXT</span>压<span class="operator">:</span><span class="number">6</span><span class="operator">*</span><span class="variable">HHV</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>势<span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">-</span><span class="number">5</span><span class="operator">*</span><span class="variable">NOTEXT</span>势<span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line"><span class="variable">NOTEXT</span>托<span class="operator">:</span><span class="number">2</span><span class="operator">*</span><span class="variable">NOTEXT</span>势<span class="operator">-</span><span class="variable">NOTEXT</span>压<span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line"><span class="variable">IF</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>势<span class="operator">&lt;&gt;</span><span class="variable">NOTEXT</span>托<span class="operator">,</span><span class="variable">NOTEXT</span>托<span class="operator">,</span><span class="variable">DRAWNULL</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line"><span class="punctuation">&#123;</span><span class="variable">NOTEXT</span>压<span class="operator">=</span><span class="variable">NOTEXT</span>托 <span class="variable">AND</span> <span class="variable">REF</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>压<span class="operator">,</span><span class="number">1</span><span class="punctuation">)</span><span class="operator">&gt;</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>托<span class="operator">,</span><span class="number">1</span><span class="punctuation">)</span><span class="operator">;</span><span class="punctuation">&#125;</span></span><br><span class="line"><span class="variable">A1</span><span class="operator">:=</span><span class="variable">EMA</span><span class="punctuation">(</span><span class="variable">AMV0</span><span class="operator">,</span><span class="number">21</span><span class="punctuation">)</span><span class="operator">/</span><span class="variable">EMA</span><span class="punctuation">(</span><span class="variable">VOL</span><span class="operator">,</span><span class="number">21</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">A2</span><span class="operator">:=</span><span class="number">6</span><span class="operator">*</span><span class="variable">HHV</span><span class="punctuation">(</span><span class="variable">A1</span><span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">-</span><span class="number">5</span><span class="operator">*</span><span class="variable">A1</span><span class="operator">;</span></span><br><span class="line"><span class="variable">A3</span><span class="operator">:=</span><span class="number">2</span><span class="operator">*</span><span class="variable">A1</span><span class="operator">-</span><span class="variable">A2</span><span class="operator">;</span></span><br><span class="line"><span class="variable">A4</span><span class="operator">:=</span><span class="variable">A1</span><span class="operator">=</span><span class="variable">A3</span><span class="operator">;</span></span><br><span class="line"><span class="variable">XD</span><span class="operator">:</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">A3</span><span class="operator">&gt;</span><span class="built_in">C</span> <span class="variable">AND</span> <span class="variable">A2</span><span class="operator">&gt;</span><span class="variable">A3</span><span class="operator">,</span><span class="number">1</span><span class="punctuation">)</span> <span class="variable">AND</span> <span class="built_in">C</span><span class="operator">&gt;</span><span class="built_in">O</span> <span class="variable">AND</span> <span class="variable">A4</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line">防守线<span class="operator">:=</span><span class="punctuation">(</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">3</span><span class="punctuation">)</span><span class="operator">+</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">6</span><span class="punctuation">)</span><span class="operator">+</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">12</span><span class="punctuation">)</span><span class="operator">+</span><span class="variable">MA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">24</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">/</span><span class="number">4</span><span class="operator">,</span><span class="variable">DOTLINE</span><span class="operator">,</span><span class="variable">COLORLIGRAY</span> <span class="variable">LINETHICK1</span><span class="operator">;</span></span><br><span class="line"><span class="variable">VAR6</span><span class="operator">:=</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="variable">ABS</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="built_in">O</span><span class="operator">-</span><span class="built_in">C</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">/</span><span class="punctuation">(</span><span class="variable">H</span><span class="operator">-</span><span class="variable">L</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">*</span><span class="variable">VOL</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">VAR7</span><span class="operator">:=</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="variable">H</span><span class="operator">-</span><span class="variable">IF</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">&gt;</span><span class="built_in">O</span><span class="punctuation">)</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="built_in">O</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">/</span><span class="punctuation">(</span><span class="variable">H</span><span class="operator">-</span><span class="variable">L</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">*</span><span class="variable">VOL</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">VAR8</span><span class="operator">:=</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="variable">IF</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">&gt;</span><span class="built_in">O</span><span class="punctuation">)</span><span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="punctuation">)</span><span class="operator">-</span><span class="variable">L</span><span class="punctuation">)</span><span class="operator">/</span><span class="punctuation">(</span><span class="variable">H</span><span class="operator">-</span><span class="variable">L</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">*</span><span class="variable">VOL</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">NOTEXT</span>加仓<span class="operator">:</span><span class="variable">VAR6</span><span class="operator">&gt;=</span><span class="variable">VAR7</span> <span class="variable">AND</span> <span class="variable">VAR6</span><span class="operator">&gt;=</span><span class="variable">VAR8</span> <span class="variable">AND</span> <span class="built_in">C</span><span class="operator">&gt;</span><span class="built_in">O</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">,</span><span class="variable">COLORRED</span><span class="operator">;</span></span><br><span class="line"><span class="variable">NOTEXT</span>减仓<span class="operator">:</span><span class="variable">VAR6</span><span class="operator">&gt;=</span><span class="variable">VAR7</span> <span class="variable">AND</span> <span class="variable">VAR6</span><span class="operator">&gt;=</span><span class="variable">VAR8</span> <span class="variable">AND</span> <span class="built_in">C</span><span class="operator">&lt;</span><span class="built_in">O</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">,</span><span class="variable">COLORBLUE</span><span class="operator">;</span></span><br><span class="line"><span class="variable">NOTEXT</span>洗盘<span class="operator">:</span><span class="variable">VAR8</span><span class="operator">&gt;</span><span class="variable">VAR6</span> <span class="variable">AND</span> <span class="variable">VAR8</span><span class="operator">&gt;</span><span class="variable">VAR7</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">,</span><span class="variable">COLORMAGENTA</span><span class="operator">;</span></span><br><span class="line"><span class="variable">NOTEXT</span>高抛<span class="operator">:</span><span class="variable">VAR7</span><span class="operator">&gt;</span><span class="variable">VAR6</span> <span class="variable">AND</span> <span class="variable">VAR7</span><span class="operator">&gt;</span><span class="variable">VAR8</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">,</span><span class="variable">COLORMAGENTA</span><span class="operator">;</span></span><br><span class="line"><span class="variable">NOTEXT</span>地量<span class="operator">:</span><span class="punctuation">&#123;</span><span class="variable">VAR9</span><span class="operator">&gt;</span><span class="number">2</span> <span class="variable">AND</span> <span class="punctuation">&#125;</span><span class="variable">VOL</span><span class="operator">&lt;</span><span class="variable">MA</span><span class="punctuation">(</span><span class="variable">VOL</span><span class="operator">,</span><span class="number">5</span><span class="punctuation">)</span><span class="operator">/</span><span class="number">2</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">,</span><span class="variable">COLORWHITE</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>加仓<span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="number">1</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORRED</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>洗盘<span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="number">1</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORMAGENTA</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>减仓<span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="number">1</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORBLUE</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>高抛<span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="number">1</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORMAGENTA</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">NOTEXT</span>地量<span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="number">1</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORWHITE</span><span class="operator">;</span></span><br><span class="line"><span class="variable">JJ</span><span class="operator">:=</span><span class="punctuation">(</span><span class="number">3</span><span class="operator">*</span><span class="built_in">C</span><span class="operator">+</span><span class="variable">H</span><span class="operator">+</span><span class="variable">L</span><span class="operator">+</span><span class="built_in">O</span><span class="punctuation">)</span><span class="operator">/</span><span class="number">6</span><span class="operator">;</span></span><br><span class="line"><span class="variable">VAR1</span><span class="operator">:=</span><span class="punctuation">(</span><span class="number">8</span><span class="operator">*</span><span class="variable">JJ</span><span class="operator">+</span><span class="number">7</span><span class="operator">*</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">JJ</span><span class="operator">,</span><span class="number">1</span><span class="punctuation">)</span><span class="operator">+</span><span class="number">6</span><span class="operator">*</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">JJ</span><span class="operator">,</span><span class="number">2</span><span class="punctuation">)</span><span class="operator">+</span><span class="number">5</span><span class="operator">*</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">JJ</span><span class="operator">,</span><span class="number">3</span><span class="punctuation">)</span><span class="operator">+</span><span class="number">4</span><span class="operator">*</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">JJ</span><span class="operator">,</span><span class="number">4</span><span class="punctuation">)</span><span class="operator">+</span><span class="number">3</span><span class="operator">*</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">JJ</span><span class="operator">,</span><span class="number">5</span><span class="punctuation">)</span><span class="operator">+</span><span class="number">2</span><span class="operator">*</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">JJ</span><span class="operator">,</span><span class="number">6</span><span class="punctuation">)</span><span class="operator">+</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">JJ</span><span class="operator">,</span><span class="number">8</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">/</span><span class="number">36</span><span class="operator">;</span></span><br><span class="line"><span class="variable">TJ1</span><span class="operator">:=</span><span class="variable">VOL</span><span class="operator">=</span><span class="variable">HHV</span><span class="punctuation">(</span><span class="variable">VOL</span><span class="operator">,</span><span class="number">10</span><span class="punctuation">)</span> <span class="variable">AND</span> <span class="variable">VOL</span><span class="operator">&gt;</span><span class="number">2</span><span class="operator">*</span><span class="variable">REF</span><span class="punctuation">(</span><span class="variable">VOL</span><span class="operator">,</span><span class="number">1</span><span class="punctuation">)</span> <span class="variable">AND</span> <span class="variable">CLOSE</span><span class="operator">&gt;</span><span class="variable">VAR1</span> <span class="variable">AND</span> <span class="built_in">C</span><span class="operator">&gt;</span><span class="variable">REF</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">1</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">LJL</span><span class="operator">:=</span><span class="variable">FILTER</span><span class="punctuation">(</span><span class="variable">TJ1</span><span class="operator">,</span><span class="number">5</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line">涨停<span class="operator">:=</span><span class="variable">IF</span><span class="punctuation">(</span><span class="variable">REF</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">1</span><span class="punctuation">)</span><span class="operator">*</span><span class="number">1.1</span><span class="operator">-</span><span class="built_in">C</span><span class="operator">&lt;</span><span class="number">0.01</span> <span class="operator">,</span><span class="number">1</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">HD</span><span class="operator">:=</span><span class="variable">COUNT</span><span class="punctuation">(</span>涨停<span class="operator">,</span><span class="number">13</span><span class="punctuation">)</span><span class="operator">&gt;=</span><span class="number">1</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span>涨停<span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="number">4</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORRED</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span>涨停<span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="number">3</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORYELLOW</span><span class="operator">;</span></span><br><span class="line"><span class="variable">DRAWTEXT</span><span class="punctuation">(</span><span class="variable">XD</span><span class="operator">,</span><span class="variable">LOW</span><span class="operator">*</span><span class="number">0.95</span><span class="operator">,&#x27;</span>   上坡路<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORYELLOW</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line"><span class="variable">DRAWICON</span><span class="punctuation">(</span><span class="variable">XD</span><span class="operator">,</span><span class="punctuation">(</span><span class="variable">L</span><span class="operator">*</span><span class="number">0.97</span><span class="punctuation">)</span><span class="operator">,</span><span class="number">26</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">XD</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="number">3</span><span class="operator">,</span><span class="number">0</span> <span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLOR00AAFF</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">XD</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="number">2.1</span><span class="operator">,</span><span class="number">0</span> <span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLOR00BBFF</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">XD</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="number">1.5</span><span class="operator">,</span><span class="number">0</span> <span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLOR00CCFF</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">XD</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="number">1</span><span class="operator">,</span><span class="number">0</span> <span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLOR00DDFF</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">XD</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="number">0.6</span><span class="operator">,</span><span class="number">0</span> <span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLOR00EEFF</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="variable">XD</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="number">0.2</span><span class="operator">,</span><span class="number">0</span> <span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLOR00FFFF</span><span class="operator">;</span></span><br><span class="line"><span class="variable">DIFF</span><span class="operator">:=</span><span class="variable">EMA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">12</span><span class="punctuation">)</span><span class="operator">-</span><span class="variable">EMA</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">,</span><span class="number">26</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">DEA</span><span class="operator">:=</span><span class="variable">EMA</span><span class="punctuation">(</span><span class="variable">DIFF</span><span class="operator">,</span><span class="number">9</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">MACD</span><span class="operator">:=</span><span class="number">2</span><span class="operator">*</span><span class="punctuation">(</span><span class="variable">DIFF</span><span class="operator">-</span><span class="variable">DEA</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line">平空开多<span class="operator">:</span><span class="variable">CROSS</span><span class="punctuation">(</span><span class="variable">MACD</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORRED</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line">平多开空<span class="operator">:</span><span class="variable">CROSS</span><span class="punctuation">(</span><span class="number">0</span><span class="operator">,</span><span class="variable">MACD</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORGREEN</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line"><span class="type">SELL_SELLSHORT</span><span class="punctuation">(</span>平多开空<span class="operator">,</span><span class="variable">H</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line"><span class="variable">STICKLINE</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">+</span><span class="built_in">O</span><span class="punctuation">)</span><span class="operator">/</span><span class="number">2</span><span class="operator">&gt;</span>多空平衡点 <span class="variable">AND</span> <span class="variable">NOTEXT</span>减仓<span class="operator">=</span><span class="number">1</span><span class="operator">,</span><span class="built_in">O</span><span class="operator">,</span><span class="built_in">C</span><span class="operator">,</span><span class="number">2.2</span><span class="operator">,</span><span class="number">0</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORGREEN</span><span class="operator">;</span></span><br><span class="line"><span class="variable">DRAWTEXT</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">+</span><span class="built_in">O</span><span class="punctuation">)</span><span class="operator">/</span><span class="number">2</span><span class="operator">&gt;</span>多空平衡点 <span class="variable">AND</span> <span class="variable">NOTEXT</span>减仓<span class="operator">=</span><span class="number">1</span><span class="operator">,</span><span class="variable">H</span><span class="operator">,&#x27;</span>   下坡路<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORCYAN</span><span class="operator">,</span><span class="variable">NODRAW</span><span class="operator">;</span></span><br><span class="line"><span class="variable">DRAWICON</span><span class="punctuation">(</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">+</span><span class="built_in">O</span><span class="punctuation">)</span><span class="operator">/</span><span class="number">2</span><span class="operator">&gt;</span>多空平衡点 <span class="variable">AND</span> <span class="variable">NOTEXT</span>减仓<span class="operator">=</span><span class="number">1</span><span class="operator">,</span><span class="variable">H</span><span class="operator">*</span><span class="number">1.03</span><span class="operator">,</span><span class="number">27</span><span class="punctuation">)</span><span class="operator">;</span></span><br><span class="line">小目标<span class="operator">:</span><span class="variable">ASD</span><span class="operator">*</span><span class="number">1.4</span><span class="operator">,</span><span class="variable">DOTLINE</span><span class="operator">,</span><span class="variable">COLORMAGENTA</span><span class="operator">;</span></span><br><span class="line">防守<span class="operator">:</span><span class="variable">ASD</span><span class="operator">*</span><span class="number">0.9</span><span class="operator">,</span><span class="variable">DOTLINE</span><span class="operator">,</span><span class="variable">COLORYELLOW</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="built_in">C</span><span class="operator">&gt;</span><span class="built_in">O</span><span class="operator">,</span><span class="number">0.01</span><span class="operator">,</span><span class="number">0.9</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span><span class="variable">SGZBK</span><span class="operator">.</span><span class="variable">TOP</span><span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORWHITE</span><span class="operator">;</span></span><br><span class="line"><span class="variable">DRAWRECTREL</span><span class="punctuation">(</span><span class="number">920</span><span class="operator">,</span><span class="number">750</span><span class="operator">,</span><span class="number">1000</span><span class="operator">,</span><span class="number">790</span><span class="operator">,</span><span class="variable">RGB</span><span class="punctuation">(</span><span class="number">255</span><span class="operator">,</span><span class="number">0</span><span class="operator">,</span><span class="number">255</span><span class="punctuation">)</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">NOFRAME</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.94</span><span class="operator">,</span><span class="number">0.69</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span>★七彩钻石★<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORWHITE</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.94</span><span class="operator">,</span><span class="number">0.73</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 金<span class="operator">:</span>启<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLOR00CCFF</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.94</span><span class="operator">,</span><span class="number">0.77</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 黄<span class="operator">:</span>拉<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORYELLOW</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.94</span><span class="operator">,</span><span class="number">0.81</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 红<span class="operator">:</span>吸<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORRED</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.94</span><span class="operator">,</span><span class="number">0.85</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 紫<span class="operator">:</span><span class="variable">T</span><span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORFF00FF</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.94</span><span class="operator">,</span><span class="number">0.89</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 蓝<span class="operator">:</span>洗<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORBLUE</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.94</span><span class="operator">,</span><span class="number">0.93</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 白<span class="operator">:</span>洗完<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORWHITE</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.94</span><span class="operator">,</span><span class="number">0.98</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 绿<span class="operator">:</span>出<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORGREEN</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.85</span><span class="operator">,</span><span class="number">0.73</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 紫线<span class="operator">:</span>小目标<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORMAGENTA</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.85</span><span class="operator">,</span><span class="number">0.77</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 黄线<span class="operator">:</span>防守线<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORYELLOW</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.85</span><span class="operator">,</span><span class="number">0.81</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 红线<span class="operator">:</span>多<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORRED</span><span class="operator">;</span></span><br><span class="line"><span class="type">DRAWTEXT_FIX</span><span class="punctuation">(</span><span class="number">1</span><span class="operator">,</span><span class="number">0.85</span><span class="operator">,</span><span class="number">0.85</span><span class="operator">,</span><span class="number">0</span><span class="operator">,&#x27;</span> 绿线<span class="operator">:</span>空<span class="operator">&#x27;</span><span class="punctuation">)</span><span class="operator">,</span><span class="variable">COLORGREEN</span><span class="operator">;</span></span><br></pre></td></tr></table></figure>
+
+<p><mark><font color=red><strong>副图源码：</strong></font></mark>  </p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">周期:=<span class="number">13</span>;</span><br><span class="line">文字位置:=<span class="number">30</span>;</span><br><span class="line">N:=<span class="number">9</span>;</span><br><span class="line">乖离<span class="number">24</span>:=(C-MA(C,<span class="number">24</span>))/MA(C,<span class="number">24</span>)*<span class="number">100</span>;</span><br><span class="line">向上:=REF(乖离<span class="number">24</span>,<span class="number">1</span>)&lt;<span class="number">0</span> AND 乖离<span class="number">24</span>&gt;<span class="number">0</span>;</span><br><span class="line">没涨:=(MA(C,<span class="number">2</span>)-REF(MA(C,<span class="number">2</span>),<span class="number">10</span>))/MA(C,<span class="number">2</span>)*<span class="number">100</span>&gt;<span class="number">0</span> AND (MA(C,<span class="number">2</span>)-REF(MA(C,<span class="number">2</span>),<span class="number">10</span>))/MA(C,<span class="number">2</span>)*<span class="number">100</span>&lt;<span class="number">20</span>;</span><br><span class="line">拐点:=VALUEWHEN(向上=<span class="number">1</span> AND 没涨=<span class="number">1</span>,C);</span><br><span class="line">平衡线<span class="number">1</span>:=拐点*<span class="number">1.5</span>;</span><br><span class="line">ASD:=MA(CYC.CYC3,<span class="number">20</span>);</span><br><span class="line">小目标:=ASD*<span class="number">1.4</span>;</span><br><span class="line">第一防守:=ASD*<span class="number">1</span>;</span><br><span class="line">第二防守:=ASD*<span class="number">0.9</span>;</span><br><span class="line">CG:=WMA(C,N),LINETHICK2,COLORRED;</span><br><span class="line">FL:=HHV(CG,<span class="number">5</span>);</span><br><span class="line">FS:=CG-(FL-CG);</span><br><span class="line">IF(CG&lt;&gt;FS,CG,DRAWNULL),COLORGREEN,LINETHICK2,NODRAW;</span><br><span class="line">AMV0:=VOL*(O+C+H+L)/<span class="number">4</span>;</span><br><span class="line">NOTEXT势:EMA(AMV0,<span class="number">21</span>)/EMA(VOL,<span class="number">21</span>),NODRAW;</span><br><span class="line">NOTEXT压:<span class="number">6</span>*HHV(NOTEXT势,<span class="number">2</span>)<span class="number">-5</span>*NOTEXT势,NODRAW;</span><br><span class="line">NOTEXT托:<span class="number">2</span>*NOTEXT势-NOTEXT压,NODRAW;</span><br><span class="line">IF(NOTEXT势&lt;&gt;NOTEXT托,NOTEXT托,DRAWNULL),NODRAW;</span><br><span class="line">&#123;NOTEXT压=NOTEXT托 AND REF(NOTEXT压,<span class="number">1</span>)&gt;REF(NOTEXT托,<span class="number">1</span>);&#125;</span><br><span class="line">A1:=EMA(AMV0,<span class="number">21</span>)/EMA(VOL,<span class="number">21</span>);</span><br><span class="line">A2:=<span class="number">6</span>*HHV(A1,<span class="number">2</span>)<span class="number">-5</span>*A1;</span><br><span class="line">A3:=<span class="number">2</span>*A1-A2;</span><br><span class="line">A4:=A1=A3;</span><br><span class="line">XD:=REF(A3&gt;C AND A2&gt;A3,<span class="number">1</span>) AND C&gt;O AND A4,NODRAW;</span><br><span class="line">防守线:=(MA(C,<span class="number">3</span>)+MA(C,<span class="number">6</span>)+MA(C,<span class="number">12</span>)+MA(C,<span class="number">24</span>))/<span class="number">4</span>,DOTLINE,COLORLIGRAY LINETHICK1;</span><br><span class="line">VAR6:=((ABS((O-C))/(H-L))*VOL);</span><br><span class="line">VAR7:=(((H-IF((C&gt;O),C,O))/(H-L))*VOL);</span><br><span class="line">VAR8:=(((IF((C&gt;O),O,C)-L)/(H-L))*VOL);</span><br><span class="line">NOTEXT加仓:=VAR6&gt;=VAR7 AND VAR6&gt;=VAR8 AND C&gt;O,NODRAW,COLORRED;</span><br><span class="line">NOTEXT减仓:=VAR6&gt;=VAR7 AND VAR6&gt;=VAR8 AND C&lt;O,NODRAW,COLORBLUE;</span><br><span class="line">NOTEXT洗盘:=VAR8&gt;VAR6 AND VAR8&gt;VAR7,NODRAW,COLORWHITE;</span><br><span class="line">NOTEXT高抛:=VAR7&gt;VAR6 AND VAR7&gt;VAR8,NODRAW,COLORMAGENTA;</span><br><span class="line">NOTEXT地量:=&#123;VAR9&gt;<span class="number">2</span> AND &#125;VOL&lt;MA(VOL,<span class="number">5</span>)/<span class="number">2</span>,NODRAW,COLORGREEN;</span><br><span class="line">JJ:=(<span class="number">3</span>*C+H+L+O)/<span class="number">6</span>;</span><br><span class="line">VAR1:=(<span class="number">8</span>*JJ+<span class="number">7</span>*REF(JJ,<span class="number">1</span>)+<span class="number">6</span>*REF(JJ,<span class="number">2</span>)+<span class="number">5</span>*REF(JJ,<span class="number">3</span>)+<span class="number">4</span>*REF(JJ,<span class="number">4</span>)+<span class="number">3</span>*REF(JJ,<span class="number">5</span>)+<span class="number">2</span>*REF(JJ,<span class="number">6</span>)+REF(JJ,<span class="number">8</span>))/<span class="number">36</span>;</span><br><span class="line">TJ1:=VOL=HHV(VOL,<span class="number">10</span>) AND VOL&gt;<span class="number">2</span>*REF(VOL,<span class="number">1</span>) AND CLOSE&gt;VAR1 AND C&gt;REF(C,<span class="number">1</span>);</span><br><span class="line">LJL:=FILTER(TJ1,<span class="number">5</span>);</span><br><span class="line">涨停:=IF(REF(C,<span class="number">1</span>)*<span class="number">1.1</span>-C&lt;<span class="number">0.01</span> ,<span class="number">1</span>,<span class="number">0</span>);</span><br><span class="line">HD:=COUNT(涨停,<span class="number">13</span>)&gt;=<span class="number">1</span>;</span><br><span class="line">DIFF:=EMA(C,<span class="number">12</span>)-EMA(C,<span class="number">26</span>);</span><br><span class="line">DEA:=EMA(DIFF,<span class="number">9</span>);</span><br><span class="line">MACD:=<span class="number">2</span>*(DIFF-DEA);</span><br><span class="line">平空开多:CROSS(MACD,<span class="number">0</span>),COLORRED,NODRAW;</span><br><span class="line">平多开空:CROSS(<span class="number">0</span>,MACD),COLORGREEN,NODRAW;</span><br><span class="line">SELL_SELLSHORT(平多开空,H),NODRAW;</span><br><span class="line">金钻:=XD=<span class="number">1</span>;</span><br><span class="line">绿钻:=(C+O)/<span class="number">2</span>&gt;小目标 AND NOTEXT减仓=<span class="number">1</span>;</span><br><span class="line">STICKLINE(金钻=<span class="number">1</span>, <span class="number">0</span>,<span class="number">10</span>, <span class="number">0</span>,<span class="number">0</span>),COLOR00CCFF;</span><br><span class="line">STICKLINE(金钻=<span class="number">1</span>, <span class="number">0</span>,<span class="number">2</span>, <span class="number">3</span>,<span class="number">0</span>),COLOR00CCFF;</span><br><span class="line">DRAWTEXT(金钻=<span class="number">1</span>,<span class="number">9</span>,<span class="string">&#x27;※七&#x27;</span>),COLORYELLOW;</span><br><span class="line">DRAWTEXT(金钻=<span class="number">1</span>,<span class="number">7.5</span>,<span class="string">&#x27;★彩&#x27;</span>),COLORMAGENTA;</span><br><span class="line">DRAWTEXT(金钻=<span class="number">1</span>,<span class="number">6</span>,<span class="string">&#x27;※金&#x27;</span>),COLORYELLOW;</span><br><span class="line">DRAWTEXT(金钻=<span class="number">1</span>,<span class="number">4.5</span>,<span class="string">&#x27;★钻&#x27;</span>),COLORMAGENTA;</span><br><span class="line">DRAWICON(金钻=<span class="number">1</span>,<span class="number">3</span>,<span class="number">26</span>);</span><br><span class="line">STICKLINE(绿钻=<span class="number">1</span>, <span class="number">0</span>,<span class="number">10</span>, <span class="number">0</span>,<span class="number">0</span>),COLORGREEN;</span><br><span class="line">STICKLINE(绿钻=<span class="number">1</span>, <span class="number">8</span>,<span class="number">10</span>, <span class="number">3</span>,<span class="number">0</span>),COLORGREEN;</span><br><span class="line">DRAWTEXT(绿钻=<span class="number">1</span>,<span class="number">6</span>,<span class="string">&#x27;※七&#x27;</span>),COLORGREEN;</span><br><span class="line">DRAWTEXT(绿钻=<span class="number">1</span>,<span class="number">4.5</span>,<span class="string">&#x27;★彩&#x27;</span>),COLORCYAN;</span><br><span class="line">DRAWTEXT(绿钻=<span class="number">1</span>,<span class="number">3</span>,<span class="string">&#x27;※绿&#x27;</span>),COLORGREEN;</span><br><span class="line">DRAWTEXT(绿钻=<span class="number">1</span>,<span class="number">1.5</span>,<span class="string">&#x27;★钻&#x27;</span>),COLORCYAN;</span><br><span class="line">DRAWICON(绿钻=<span class="number">1</span>,<span class="number">8</span>,<span class="number">27</span>);</span><br><span class="line">DRAWRECTREL(<span class="number">880</span>,<span class="number">200</span>,<span class="number">1000</span>,<span class="number">50</span>,RGB(<span class="number">255</span>,<span class="number">193</span>,<span class="number">37</span>)),NOFRAME;</span><br><span class="line">DRAWRECTREL(<span class="number">880</span>,<span class="number">500</span>,<span class="number">1000</span>,<span class="number">350</span>,RGB(<span class="number">0</span>,<span class="number">255</span>,<span class="number">0</span>)),NOFRAME;</span><br><span class="line">DRAWTEXT_FIX(C&gt;O,<span class="number">0.01</span>,<span class="number">0.9</span>,<span class="number">0</span>,<span class="string">&#x27;SGZBK.TOP&#x27;</span>),COLORWHITE;</span><br><span class="line">DRAWTEXT_FIX(<span class="number">1</span>,<span class="number">0.88</span>,<span class="number">0.05</span>,<span class="number">0</span>,<span class="string">&#x27;七彩金钻:强势+启点&#x27;</span>),COLORRED;</span><br><span class="line">DRAWTEXT_FIX(<span class="number">1</span>,<span class="number">0.88</span>,<span class="number">0.35</span>,<span class="number">0</span>,<span class="string">&#x27;七彩绿钻:跑路+终点&#x27;</span>),COLORRED;</span><br></pre></td></tr></table></figure>
+
+<p><mark><font color=red><strong>金钻选股源码：</strong></font></mark></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">ASD:=<span class="built_in">MA</span>(CYC.CYC3,<span class="number">20</span>);</span><br><span class="line">小目标:=ASD*<span class="number">1.4</span>;</span><br><span class="line">第一防守:=ASD*<span class="number">1</span>;</span><br><span class="line">第二防守:=ASD*<span class="number">0.9</span>;</span><br><span class="line">CG:=<span class="built_in">WMA</span>(C,<span class="number">9</span>);</span><br><span class="line">FL:=<span class="built_in">HHV</span>(CG,<span class="number">5</span>);</span><br><span class="line">FS:=<span class="built_in">CG-</span>(FL-CG);</span><br><span class="line">AMV0:=VOL*(O+C+H+L)/<span class="number">4</span>;</span><br><span class="line">NOTEXT势:=<span class="built_in">EMA</span>(AMV0,<span class="number">21</span>)/<span class="built_in">EMA</span>(VOL,<span class="number">21</span>);</span><br><span class="line">NOTEXT压:=<span class="number">6</span>*<span class="built_in">HHV</span>(NOTEXT势,<span class="number">2</span>)-<span class="number">5</span>*NOTEXT势;</span><br><span class="line">NOTEXT托:=<span class="number">2</span>*NOTEXT势-NOTEXT压;</span><br><span class="line">A1:=<span class="built_in">EMA</span>(AMV0,<span class="number">21</span>)/<span class="built_in">EMA</span>(VOL,<span class="number">21</span>);</span><br><span class="line">A2:=<span class="number">6</span>*<span class="built_in">HHV</span>(A1,<span class="number">2</span>)-<span class="number">5</span>*A1;</span><br><span class="line">A3:=<span class="number">2</span>*A1-A2;</span><br><span class="line">A4:=A1=A3;</span><br><span class="line">XD:=<span class="built_in">REF</span>(A3&gt;C AND A2&gt;A3,<span class="number">1</span>) AND C&gt;O AND A4;</span><br><span class="line">防守线:=(<span class="built_in">MA</span>(C,<span class="number">3</span>)+<span class="built_in">MA</span>(C,<span class="number">6</span>)+<span class="built_in">MA</span>(C,<span class="number">12</span>)+<span class="built_in">MA</span>(C,<span class="number">24</span>))/<span class="number">4</span>;</span><br><span class="line">VAR6:=(( <span class="built_in">ABS</span>((O-C))/(H-L))*VOL);</span><br><span class="line">VAR7:=(( (<span class="built_in">H-IF</span>((C&gt;O),C,OPEN))/(H-L))*VOL);</span><br><span class="line">VAR8:=(( (<span class="built_in">IF</span>((C&gt;O),O,C)-L)/(H-L))*VOL);</span><br><span class="line">NOTEXT加仓:=VAR6&gt;=VAR7 AND VAR6&gt;=VAR8 AND C&gt;O;</span><br><span class="line">NOTEXT减仓:=VAR6&gt;=VAR7 AND VAR6&gt;=VAR8 AND C&lt;O;</span><br><span class="line">NOTEXT洗盘:=VAR8&gt;VAR6 AND VAR8&gt;VAR7;</span><br><span class="line">NOTEXT高抛:=VAR7&gt;VAR6 AND VAR7&gt;VAR8;</span><br><span class="line">NOTEXT地量:=&#123;VAR9&gt;<span class="number">2</span> AND &#125;VOL&lt;MA(VOL,<span class="number">5</span>)/<span class="number">2</span>;</span><br><span class="line">JJ:=(<span class="number">3</span>*C+H+L+O)/<span class="number">6</span>;</span><br><span class="line">VAR1:=(<span class="number">8</span>*JJ+<span class="number">7</span>*<span class="built_in">REF</span>(JJ,<span class="number">1</span>)+<span class="number">6</span>*<span class="built_in">REF</span>(JJ,<span class="number">2</span>)+<span class="number">5</span>*<span class="built_in">REF</span>(JJ,<span class="number">3</span>)+<span class="number">4</span>*<span class="built_in">REF</span>(JJ,<span class="number">4</span>)+<span class="number">3</span>*<span class="built_in">REF</span>(JJ,<span class="number">5</span>)+<span class="number">2</span>*<span class="built_in">REF</span>(JJ,<span class="number">6</span>)+<span class="built_in">REF</span>(JJ,<span class="number">8</span>))/<span class="number">36</span>;</span><br><span class="line">TJ1:=VOL=<span class="built_in">HHV</span>(VOL,<span class="number">10</span>) AND VOL&gt;<span class="number">2</span>*<span class="built_in">REF</span>(VOL,<span class="number">1</span>) AND C&gt;VAR1 AND C&gt;<span class="built_in">REF</span>(C,<span class="number">1</span>);</span><br><span class="line">LJL:=<span class="built_in">FILTER</span>(TJ1,<span class="number">5</span>);</span><br><span class="line">涨停:=<span class="built_in">IF</span>(<span class="built_in">REF</span>(C,<span class="number">1</span>)*<span class="number">1.1</span>-C&lt;<span class="number">0.01</span> ,<span class="number">1</span>,<span class="number">0</span>);</span><br><span class="line">HD:=<span class="built_in">COUNT</span>(涨停,<span class="number">13</span>)&gt;=<span class="number">1</span>;</span><br><span class="line">DIFF:=<span class="built_in">EMA</span>(C,<span class="number">12</span>)<span class="built_in">-EMA</span>(C,<span class="number">26</span>);</span><br><span class="line">DEA:=<span class="built_in">EMA</span>(DIFF,<span class="number">9</span>);</span><br><span class="line">MACD:=<span class="number">2</span>*(DIFF-DEA);</span><br><span class="line">平空开多:=<span class="built_in">CROSS</span>(MACD,<span class="number">0</span>);</span><br><span class="line">平多开空:=<span class="built_in">CROSS</span>(<span class="number">0</span>,MACD);</span><br><span class="line">金钻:XD=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%B8%83%E5%BD%A9%E9%87%91%E9%92%BB-2.png">  </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
+
+    </div>
+
+    
+    
+    <div>
+    
+        <div style="text-align:center;color: #540d15;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+        <div class="reward-container">
+  <div>您的支持，是我创作的动力，感谢!</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="shuige 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="shuige 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>shuige
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://sgzbk.top/posts/64399/" title="七彩金钻">http://sgzbk.top/posts/64399/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注！</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/wechat.png">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">微信</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/images/woa.png">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">微信公众号</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E4%B8%BB%E5%9B%BE-%E5%89%AF%E5%9B%BE-%E9%80%89%E8%82%A1/" rel="tag"><i class="fa fa-tag"></i> 主图 副图 选股</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/31846/" rel="prev" title="指标测试1206">
+      <i class="fa fa-chevron-left"></i> 指标测试1206
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/48295/" rel="next" title="指标测试1207">
+      指标测试1207 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="shuige"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">shuige</p>
+  <div class="site-description" itemprop="description">心有所期 忙而不茫</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:sgzbk@foxmail.com" title="E-Mail → mailto:sgzbk@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">shuige</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">55k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">50 分钟</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'dM0DqJik6QiiVmx2wNpDnbAy-9Nh9j0Va',
+      appKey     : 'wl00WRrNyVISP1c19vVzFPLs',
+      placeholder: "友善吐槽，文明评论！",
+      avatar     : 'robohash',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
