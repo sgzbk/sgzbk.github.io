@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>指标测试1208</title>
+    <url>/posts/47335/</url>
+    <content><![CDATA[<p>今天出票601016节能风电一支，因为指标剔除了科创板，创业板，有时候会出现出票少或者没有出票的情况，就这样。<span id="more"></span>  </p>
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E6%B5%8B%E8%AF%841208.png">  </p>
+<p>以后有可能再对流通值，流通股本再进行调整，先看看吧。  </p>
+<p><font color=red>请勿跟投，责任自负！</font></p>
+]]></content>
+      <categories>
+        <category>测评</category>
+      </categories>
+      <tags>
+        <tag>指标测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>精品捉妖副图及选股</title>
+    <url>/posts/12077/</url>
+    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%B2%BE%E5%93%81%E6%8D%89%E5%A6%96-1.png">  </p>
+<p>捉到妖股，血压会不会蹭蹭的往上飙？送上个人优化版精品捉妖副图及选股，助你早日擒妖成功，公式无未来。 <span id="more"></span> </p>
+<p><mark><font color=red><strong>副图及选股源码：</strong></font></mark>  </p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">SG1:=<span class="built_in">IF</span>(C&gt;<span class="built_in">REF</span>(C,<span class="number">1</span>),<span class="number">88</span>,<span class="number">0</span>);</span><br><span class="line">SG2:=<span class="built_in">IF</span>(C/<span class="built_in">REF</span>(C,<span class="number">1</span>)&gt;<span class="number">1.05</span> AND H/C&lt;<span class="number">1.01</span> AND SG1&gt;<span class="number">0</span>,<span class="number">91</span>,<span class="number">0</span>);</span><br><span class="line">SG3:=<span class="built_in">FILTER</span>(SG2&gt;<span class="number">90</span>,<span class="number">45</span>);</span><br><span class="line">SG4:=<span class="built_in">REF</span>((O+H+L+<span class="number">2</span>*C)/<span class="number">5</span>,<span class="number">1</span>);</span><br><span class="line">SG5:=<span class="built_in">SMA</span>(<span class="built_in">MAX</span>(C-SG4,<span class="number">0</span>),<span class="number">7</span>,<span class="number">1</span>)/<span class="built_in">SMA</span>(<span class="built_in">ABS</span>(C-SG4),<span class="number">7</span>,<span class="number">1</span>)*<span class="number">10</span>;</span><br><span class="line">SG6:=<span class="built_in">CROSS</span>(SG5,<span class="number">7.1</span>) AND <span class="built_in">MA</span>(V,<span class="number">5</span>)&gt;<span class="built_in">MA</span>(V,<span class="number">10</span>),COLORRED;</span><br><span class="line">捉妖:SG3 AND SG6;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%B2%BE%E5%93%81%E6%8D%89%E5%A6%96-2.png">  </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
+]]></content>
+      <categories>
+        <category>公式</category>
+      </categories>
+      <tags>
+        <tag>副图 选股</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>指标测试1207</title>
     <url>/posts/48295/</url>
     <content><![CDATA[<p>今天没有出票，就这样。<span id="more"></span>  </p>
