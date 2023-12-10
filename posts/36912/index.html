@@ -21,23 +21,23 @@
     var CONFIG = {"hostname":"sgzbk.top","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="这是我个人修改后的副图，我感觉原版不好看，且没有选股，我把它稍为修改了一下，副图就显示抄底和逃顶两个信号，这样看起来一目了然，再增加了抄底的选股公式。😁">
+  <meta name="description" content="此副图就买，卖两信号，在这里分享副图及买信号选股源码，公式不是万能，公式只是一种辅助手段，只是提供一种思路，更多的还是靠个人的判断分析能力。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简化版顶底副图及选股">
-<meta property="og:url" content="http://sgzbk.top/posts/14024/index.html">
+<meta property="og:title" content="优化波段顶底副图及选股">
+<meta property="og:url" content="http://sgzbk.top/posts/36912/index.html">
 <meta property="og:site_name" content="水哥指标库">
-<meta property="og:description" content="这是我个人修改后的副图，我感觉原版不好看，且没有选股，我把它稍为修改了一下，副图就显示抄底和逃顶两个信号，这样看起来一目了然，再增加了抄底的选股公式。😁">
+<meta property="og:description" content="此副图就买，卖两信号，在这里分享副图及买信号选股源码，公式不是万能，公式只是一种辅助手段，只是提供一种思路，更多的还是靠个人的判断分析能力。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%AE%80%E5%8C%96%E7%89%88%E9%A1%B6%E5%BA%95-1.png">
-<meta property="og:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%AE%80%E5%8C%96%E7%89%88%E9%A1%B6%E5%BA%95-2.png">
-<meta property="article:published_time" content="2023-11-30T14:10:40.000Z">
-<meta property="article:modified_time" content="2023-11-30T14:36:30.091Z">
+<meta property="og:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%BC%98%E5%8C%96%E6%B3%A2%E6%AE%B5%E9%A1%B6%E5%BA%95-1.png">
+<meta property="og:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%BC%98%E5%8C%96%E6%B3%A2%E6%AE%B5%E9%A1%B6%E5%BA%95-2.png">
+<meta property="article:published_time" content="2023-12-10T15:27:04.000Z">
+<meta property="article:modified_time" content="2023-12-10T16:29:39.151Z">
 <meta property="article:author" content="shuige">
 <meta property="article:tag" content="副图 选股">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%AE%80%E5%8C%96%E7%89%88%E9%A1%B6%E5%BA%95-1.png">
+<meta name="twitter:image" content="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%BC%98%E5%8C%96%E6%B3%A2%E6%AE%B5%E9%A1%B6%E5%BA%95-1.png">
 
-<link rel="canonical" href="http://sgzbk.top/posts/14024/">
+<link rel="canonical" href="http://sgzbk.top/posts/36912/">
 
 
 <script id="page-configurations">
@@ -50,7 +50,7 @@
   };
 </script>
 
-  <title>简化版顶底副图及选股 | 水哥指标库</title>
+  <title>优化波段顶底副图及选股 | 水哥指标库</title>
   
 
 
@@ -196,7 +196,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://sgzbk.top/posts/14024/">
+    <link itemprop="mainEntityOfPage" href="http://sgzbk.top/posts/36912/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -209,7 +209,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          简化版顶底副图及选股
+          优化波段顶底副图及选股
         </h1>
 
         <div class="post-meta">
@@ -218,10 +218,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2023-11-30 22:10:40 / 修改时间：22:36:30" itemprop="dateCreated datePublished" datetime="2023-11-30T22:10:40+08:00">2023-11-30</time>
+              <time title="创建时间：2023-12-10 23:27:04" itemprop="dateCreated datePublished" datetime="2023-12-10T23:27:04+08:00">2023-12-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-12-11 00:29:39" itemprop="dateModified" datetime="2023-12-11T00:29:39+08:00">2023-12-11</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -248,8 +254,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/posts/14024/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/14024/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/36912/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/36912/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -259,7 +265,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>753</span>
+              <span>851</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -278,15 +284,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%AE%80%E5%8C%96%E7%89%88%E9%A1%B6%E5%BA%95-1.png"> </p>
-<p>这是我个人修改后的副图，我感觉原版不好看，且没有选股，我把它稍为修改了一下，副图就显示抄底和逃顶两个信号，这样看起来一目了然，再增加了<font color=red>抄底</font>的选股公式。😁<span id="more"></span></p>
-<p><mark><font color=red><strong>副图源码：</strong></font></mark></p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">SG1:=(C-LLV(L,<span class="number">36</span>))/(HHV(H,<span class="number">36</span>)-LLV(L,<span class="number">36</span>))*<span class="number">100</span>;</span><br><span class="line">SG2:=SMA(SG1,<span class="number">3</span>,<span class="number">1</span>);</span><br><span class="line">SG3:=SMA(SG2,<span class="number">3</span>,<span class="number">1</span>);</span><br><span class="line">SG4:=SMA(SG3,<span class="number">3</span>,<span class="number">1</span>);</span><br><span class="line">波:=SG3;</span><br><span class="line">段:=SG4;</span><br><span class="line">SG5:=CROSS(SG3,SG4) AND SG3&lt;<span class="number">20</span>;</span><br><span class="line">DRAWTEXT_FIX(C&gt;O,<span class="number">0.01</span>,<span class="number">0.9</span>,<span class="number">0</span>,<span class="string">&#x27;SGZBK.TOP&#x27;</span>),COLORWHITE;</span><br><span class="line">DRAWTEXT(FILTER(SG5,<span class="number">10</span>)=<span class="number">1</span>,<span class="number">40</span>,<span class="string">&#x27;抄底&#x27;</span>),LINETHICK3;</span><br><span class="line">STICKLINE(FILTER(SG5,<span class="number">10</span>)=<span class="number">1</span>,<span class="number">0</span>,<span class="number">30</span>,<span class="number">4</span>,<span class="number">0</span>),COLORRED;</span><br><span class="line">SG6:=CROSS(SG4,SG3) AND SG3&gt;<span class="number">80</span>;</span><br><span class="line">STICKLINE(FILTER(SG6,<span class="number">5</span>)=<span class="number">1</span>,<span class="number">90</span>,<span class="number">60</span>,<span class="number">4</span>,<span class="number">0</span>),COLORYELLOW;</span><br><span class="line">DRAWTEXT(FILTER(SG6,<span class="number">5</span>)=<span class="number">1</span>,<span class="number">50</span>,<span class="string">&#x27;逃顶&#x27;</span>),LINETHICK1,COLORYELLOW;</span><br></pre></td></tr></table></figure>
+        <p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%BC%98%E5%8C%96%E6%B3%A2%E6%AE%B5%E9%A1%B6%E5%BA%95-1.png">  </p>
+<p>此副图就买，卖两信号，在这里分享副图及买信号选股源码，公式不是万能，公式只是一种辅助手段，只是提供一种思路，更多的还是靠个人的判断分析能力。<span id="more"></span> </p>
+<p><mark><font color=red><strong>副图源码：</strong></font></mark>  </p>
+<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">SHORT:</span>=<span class="number">10</span>;</span><br><span class="line"><span class="symbol">LONG:</span>=<span class="number">50</span>;</span><br><span class="line"><span class="symbol">SG1:</span>=(C-MA(C,<span class="type">SHORT</span>))/MA(C,<span class="type">SHORT</span>)*<span class="number">100</span>;</span><br><span class="line"><span class="symbol">SG2:</span>=(C-LLV(L,<span class="type">LONG</span>))/(HHV(H,<span class="type">LONG</span>)-LLV(L,<span class="type">LONG</span>))*<span class="number">100</span>;</span><br><span class="line"><span class="symbol">SG3:</span>=SMA(SG2,<span class="number">2</span>,<span class="number">1</span>);</span><br><span class="line">顶:<span class="number">100</span>+(-ABS(SG1)),COLORRED;</span><br><span class="line">股价:SMA(SG3,<span class="number">2</span>,<span class="number">1</span>);</span><br><span class="line">底:ABS(SG1),COLORGREEN;</span><br><span class="line">生死线:<span class="number">50</span>,COLORFFAA00,LINETHICK3;</span><br><span class="line"><span class="symbol">A:</span><span class="number">80</span>;</span><br><span class="line"><span class="symbol">B:</span><span class="number">20</span>;</span><br><span class="line">买:STICKLINE(CROSS(股价,底),<span class="number">3</span>,<span class="number">20</span>,<span class="number">2</span>,<span class="number">0</span>),COLORRED,LINETHICK1;</span><br><span class="line">STICKLINE(CROSS(股价,底),<span class="number">20</span>,<span class="number">25</span>,<span class="number">2</span>,<span class="number">0</span>),COLORFF9900,LINETHICK1;</span><br><span class="line">DRAWTEXT(CROSS(股价,底),<span class="number">30</span>,<span class="comment">&#x27; 买&#x27;),COLORFFFFCC;</span></span><br><span class="line">卖:STICKLINE(CROSS(股价,顶),<span class="number">70</span>,<span class="number">90</span>,<span class="number">2</span>,<span class="number">0</span>),COLORRED,LINETHICK1;</span><br><span class="line">STICKLINE(CROSS(股价,顶),<span class="number">90</span>,<span class="number">99</span>,<span class="number">2</span>,<span class="number">0</span>),COLORFF9900,LINETHICK1;</span><br><span class="line">DRAWTEXT(CROSS(股价,顶),<span class="number">70</span>,<span class="comment">&#x27; 卖&#x27;),COLORFFFFCC;</span></span><br></pre></td></tr></table></figure>
 
-<p><mark><font color=red><strong>抄底选股源码：</strong></font></mark> </p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SG1:=(<span class="built_in">C-LLV</span>(L,<span class="number">36</span>))/(<span class="built_in">HHV</span>(H,<span class="number">36</span>)<span class="built_in">-LLV</span>(L,<span class="number">36</span>))*<span class="number">100</span>;</span><br><span class="line">SG2:=<span class="built_in">SMA</span>(SG1,<span class="number">3</span>,<span class="number">1</span>);</span><br><span class="line">SG3:=<span class="built_in">SMA</span>(SG2,<span class="number">3</span>,<span class="number">1</span>);</span><br><span class="line">SG4:=<span class="built_in">SMA</span>(SG3,<span class="number">3</span>,<span class="number">1</span>);</span><br><span class="line">波:=SG3;</span><br><span class="line">段:=SG4;</span><br><span class="line">SG5:=<span class="built_in">CROSS</span>(SG3,SG4) AND SG3&lt;<span class="number">20</span>;</span><br><span class="line">抄底:<span class="built_in">FILTER</span>(SG5,<span class="number">10</span>)=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E7%AE%80%E5%8C%96%E7%89%88%E9%A1%B6%E5%BA%95-2.png"> </p>
-<p><mark style="background-color: #ff0a5"><font color=red>指标仅供参考，不作投资依据。</font></mark></p>
+<p><mark><font color=red><strong>买信号选股源码：</strong></font></mark>  </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SHORT:=<span class="number">10</span>;</span><br><span class="line">LONG:=<span class="number">50</span>;</span><br><span class="line">SG1:=(<span class="built_in">C-MA</span>(C,SHORT))/<span class="built_in">MA</span>(C,SHORT)*<span class="number">100</span>;</span><br><span class="line">SG2:=(<span class="built_in">C-LLV</span>(L,LONG))/(<span class="built_in">HHV</span>(H,LONG)<span class="built_in">-LLV</span>(L,LONG))*<span class="number">100</span>;</span><br><span class="line">SG3:=<span class="built_in">SMA</span>(SG2,<span class="number">2</span>,<span class="number">1</span>);</span><br><span class="line">股价:=<span class="built_in">SMA</span>(SG3,<span class="number">2</span>,<span class="number">1</span>);</span><br><span class="line">底:=<span class="built_in">ABS</span>(SG1);</span><br><span class="line">买:<span class="built_in">CROSS</span>(股价,底);</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E4%BC%98%E5%8C%96%E6%B3%A2%E6%AE%B5%E9%A1%B6%E5%BA%95-2.png">  </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
 
     </div>
 
@@ -327,7 +334,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://sgzbk.top/posts/14024/" title="简化版顶底副图及选股">http://sgzbk.top/posts/14024/</a>
+    <a href="http://sgzbk.top/posts/36912/" title="优化波段顶底副图及选股">http://sgzbk.top/posts/36912/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -377,12 +384,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/posts/27275/" rel="prev" title="猎庄出击">
-      <i class="fa fa-chevron-left"></i> 猎庄出击
+    <a href="/posts/47335/" rel="prev" title="指标测试1208">
+      <i class="fa fa-chevron-left"></i> 指标测试1208
     </a></div>
       <div class="post-nav-item">
-    <a href="/posts/61869/" rel="next" title="龙凤呈祥主图及选股">
-      龙凤呈祥主图及选股 <i class="fa fa-chevron-right"></i>
+    <a href="/posts/13677/" rel="next" title="水下捞鱼副图及选股">
+      水下捞鱼副图及选股 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
