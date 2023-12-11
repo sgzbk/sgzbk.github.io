@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>指标测试1211</title>
+    <url>/posts/11814/</url>
+    <content><![CDATA[<p>今天出票不少，有9支票，看看后面怎么样。</p>
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E6%B5%8B%E8%AF%951211.png">  </p>
+<p><font color=red>请勿跟投，责任自负！</font></p>
+]]></content>
+      <categories>
+        <category>测评</category>
+      </categories>
+      <tags>
+        <tag>指标测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>黑马一号副图及选股</title>
+    <url>/posts/42/</url>
+    <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E9%BB%91%E9%A9%AC%E4%B8%80%E5%8F%B7-1.png"> </p>
+<p>指标结合量价齐升原理，还有平台突破，KDJ，MACD等技术指标的应用，指标结合均线来判断，指标信号一定要在5日均线上方运行，破5日均线不得超过二个交易日。<span id="more"></span></p>
+<p><mark><font color=red><strong>副图及选股源码：</strong></font></mark>  </p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">SG1:=<span class="built_in">REF</span>(<span class="built_in">LLV</span>(L,<span class="number">30</span>),<span class="number">1</span>);</span><br><span class="line">SG2:=<span class="built_in">REF</span>(<span class="built_in">HHV</span>(H,<span class="number">30</span>),<span class="number">1</span>);</span><br><span class="line">SG3:=((SG2-SG1)/SG1)&lt;<span class="number">10</span>; </span><br><span class="line">SG4:=(<span class="built_in">C-REF</span>(C,<span class="number">1</span>))/<span class="built_in">REF</span>(C,<span class="number">1</span>)&gt;=<span class="number">0.05</span> AND SG2/C&lt;<span class="number">1.03</span>; </span><br><span class="line">SG5:=<span class="built_in">LLV</span>(L,<span class="number">18</span>);</span><br><span class="line">SG6:=<span class="built_in">HHV</span>(H,<span class="number">18</span>);</span><br><span class="line">SG7:=<span class="built_in">MA</span>(V,<span class="number">3</span>);</span><br><span class="line">SG8:=((SG6-SG5)/<span class="number">18</span>)&lt;<span class="number">0.15</span>;</span><br><span class="line">SG9:=V&gt;=<span class="number">1.8</span>*SG7;               </span><br><span class="line">SG:=<span class="string">&quot;MACD.MACD&quot;</span>&gt;<span class="number">0.05</span>;</span><br><span class="line">TJ:=(<span class="built_in">C-REF</span>(C,<span class="number">1</span>))/<span class="built_in">REF</span>(C,<span class="number">1</span>)&gt;=<span class="number">0.05</span>; </span><br><span class="line">ZB1:=C&gt;<span class="built_in">REF</span>(C,<span class="number">1</span>)*<span class="number">1.03</span>;</span><br><span class="line">ZB2:=(H-C)/C&lt;<span class="number">0.02</span>;</span><br><span class="line">ZB3:=<span class="built_in">REF</span>(C&gt;O,<span class="number">1</span>) AND <span class="built_in">REF</span>((H-C)/C*<span class="number">100</span>&lt;<span class="number">0.5</span>,<span class="number">1</span>);</span><br><span class="line">ZB4:=SG8 AND SG9 AND TJ AND ZB1 AND ZB2 AND ZB3 AND SG;</span><br><span class="line">ZB5:=<span class="built_in">REF</span>(C&gt;O OR O&gt;C,<span class="number">5</span>) AND <span class="built_in">REF</span>(C&gt;O OR O&gt;C,<span class="number">35</span>) AND <span class="built_in">REF</span>(C&gt;O OR O&gt;C,<span class="number">3</span>) AND <span class="built_in">REF</span>(C&gt;O OR O&gt;C,<span class="number">16</span>);</span><br><span class="line">ZB6:=CAPITAL&lt;<span class="number">20000000</span>;</span><br><span class="line">ZB7:=<span class="number">100</span>*VOL/CAPITAL&gt;<span class="number">3</span>;</span><br><span class="line">黑马一号:SG3 AND BB AND SG4 AND C&lt;<span class="number">10</span> AND ZB4 AND ZB6 AND ZB7 AND ZB5;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E9%BB%91%E9%A9%AC%E4%B8%80%E5%8F%B7-2.png">  </p>
+<p><mark style="background-color: #ee781f">指标仅供参考，不作投资依据。</mark></p>
+]]></content>
+      <categories>
+        <category>公式</category>
+      </categories>
+      <tags>
+        <tag>副图 选股</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>水下捞鱼副图及选股</title>
     <url>/posts/13677/</url>
     <content><![CDATA[<p><img src="https://shuigeblog.oss-cn-shenzhen.aliyuncs.com/%E6%B0%B4%E4%B8%8B%E6%8D%9E%E9%B1%BC-1.png">  </p>
